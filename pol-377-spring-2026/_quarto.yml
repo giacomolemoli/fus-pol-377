@@ -3,7 +3,8 @@ project:
 
 format:
   revealjs:
-    theme: defaul
+    embed-resources: true
+    theme: default
     logo: ../assets/fus-logo.png
     css: ../assets/custom.scss
     slideNumber: true
