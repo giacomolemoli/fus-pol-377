@@ -1,0 +1,18 @@
+project:
+  type: default
+
+format:
+  revealjs:
+    theme: defaul
+    logo: ../assets/fus-logo.png
+    css: ../assets/custom.scss
+    slideNumber: true
+    incremental: true
+    transition: fade
+
+execute:
+  echo: true
+  warning: false
+
+
+
