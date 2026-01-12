@@ -1,0 +1,308 @@
+---
+title: "International Political Economy"
+subtitle: "Lecture 2: Institutions and International Cooperation"
+date: "2026-01-23"
+---
+
+
+## Today
+
+- Review of the rational choice approach (RC)
+- Application of RC to relations between states
+- Individual egoism hinders mutually beneficial cooperation $\implies$ social dilemmas
+- International institutions as one way to solve these issues
+
+
+# Cooperation and Social Dilemmas  {.section}
+
+## The implications of individual rationality
+
+Recall the ingredients of RC
+
+- The <u>individual</u> is the basic unit of analysis
+- Individuals have motivations (<u>preferences</u>) and <u>beliefs</u> about the world (due to uncertainty)
+- Their choices are <u>constrained</u> by objective limitations or existing rules
+- Individuals <u>act</u> (choose actions) according to their preferences, beliefs, and constraints
+
+. . . 
+
+This structure of postulates means that the distinctive feature of social coexistence is the conflict of interests (arising from the heterogeneity of motives, beliefs, and constraints)
+
+. . . 
+
+But many goals are almost universal (e.g., reduce pollution and climate risk, reduce interstate war, ...). It would be natural to work together to achieve them
+
+. . . 
+
+Does individual egoism hinder our ability to work together for the common good?
+
+
+## Social Dilemmas
+
+The clash between individual and collective goals gives rise to [social dilemmas]{.alert}
+
+- Social $\rightarrow$ arise from the interaction of individuals with conflicting interests
+- Dilemma $\rightarrow$ egoism can lead to sub-optimal outcome for everyone
+
+. . . 
+
+Why do they arise?
+
+The key problem is that individuals pursue their goals, but in an inter-connected world one's actions impact the welfare of others. We say they have **externalities**.
+
+. . . 
+
+As a consequence, others will adjust their choices to do the best thing in theri interest *given* what your choices impose on them. We say there is [strategic interdependence]{.alert}
+
+. . . 
+
+We have cooperation when several decision-makers depart from the best course of individual action to "do the right thing"
+
+
+# Cooperation {.section}
+
+## The Prisoner's Dilemma
+
+The most famous illustration of a social dilemma
+
+- Two prisoners are arrested and held in separate cells
+- They are interrogated separately and cannot comunicate
+- Each must choose to either Cooperate (= stay silent) or Defect (= confess)
+- If none of them confesses, they get a light sentence
+- If one confesses and the other not, the snitcher is free and the other gets a harsh sentence
+- If both confess, they get a normal sentence
+
+. . . 
+
+
+|                    | **Cooperate** | **Defect** |
+|:-------------------|:-------------:|:----------:|
+| **Cooperate**      |   -1, -1      |  -10, 0    |
+| **Defect**         |    0, -10     |  -5, -5    |
+
+*Payoffs: Years in jail (Player 1, Player 2)*
+
+
+What do they do?
+
+
+## The Prisoner's Dilemma
+
+<table style="margin: auto; font-size: 1.2em;">
+  <tr>
+    <td></td>
+    <td style="text-align: center; font-weight: bold; padding: 10px;">Cooperate</td>
+    <td style="text-align: center; font-weight: bold; padding: 10px;">Defect</td>
+  </tr>
+  <tr>
+    <td style="text-align: center; font-weight: bold; padding: 10px;">Cooperate</td>
+    <td style="text-align: center; padding: 15px; background-color: #90EE90; border: 3px solid #228B22;">-1, -1</td>
+    <td style="text-align: center; padding: 15px;">-10, 0</td>
+  </tr>
+  <tr>
+    <td style="text-align: center; font-weight: bold; padding: 10px;">Defect</td>
+    <td style="text-align: center; padding: 15px;">0, -10</td>
+    <td style="text-align: center; padding: 15px; background-color: #FFB6C1; border: 3px solid #DC143C;">-5, -5</td>
+  </tr>
+</table>
+
+<br>
+
+
+- [**Pareto Optimal:**]{style="color: #228B22; font-weight: bold;"} (Cooperate, Cooperate) - Best collective outcome
+- [**Nash Equilibrium:**]{style="color: #DC143C; font-weight: bold;"} (Defect, Defect) - Individually rational but collectively suboptimal
+
+. . . 
+
+Individual rationality prevented cooperation
+
+
+## Applications of the Prisoner's Dilemma
+
+The PD can be applied to many circumstances where cooperation for a common benefit requires "giving up" on something.
+
+. . . 
+
+**Exercise**: explain the logic of the PD in these applications
+
+
+::: {.panel-tabset}
+
+### Example 1
+
+Nuclear disarmament during the cold war
+
+| **Actors** | **Action** | **What is the dilemma?** |
+|:-----------|:-----------|:-------------------------|
+|            |            |                          |
+|            |            |                          |
+
+
+### Example 2
+
+Overfishing (the tragedy of commons)
+
+| **Actors** | **Action** | **What is the dilemma?** |
+|:-----------|:-----------|:-------------------------|
+|            |            |                          |
+|            |            |                          |
+
+
+### Example 3
+
+Sanctions to a foreign state
+
+| **Actors** | **Action** | **What is the dilemma?** |
+|:-----------|:-----------|:-------------------------|
+|            |            |                          |
+|            |            |                          |
+
+:::
+
+
+# Collective action {.section}
+
+## Collective action
+
+We can see collective action (CA) problems as a generalization of cooperation problems when we have a larger number of actors
+
+. . . 
+
+A standard example is a **political protest**
+
+- A collective goal (e.g., the end of a non-democratic regime) requires the effort of many individuals (= a large protest)
+- Every individual has to bear the cost of protesting (it can be extremely high...)
+- If the process is successful, every person reaps the benefits irrespective of what they have done
+
+. . . 
+
+What's the problem?
+
+. . . 
+
+Since the group is large, an individual's action is not decisive for the outcome. Yet, the personal cost is substantial. It is better to stay home and wait for the others to overturn the regime. We say this is the [free rider problem]{.alert}
+
+
+# Institutional solutions {.section}
+
+## What are institutions?
+
+There are several views and definitions of institutions in the social sciences. For our purposes, we will define institutions as systems of [rules]{.alert} or [norms]{.alert} of behavior
+
+. . . 
+
+Institutions "correct" the incentives towards self-interest and coordinate behavior (state policy) with that of the others
+
+. . .
+
+In this sense, we can create "institutional solutions" to social dilemmas
+
+
+## Institutional solutions for cooperation 
+
+Let's go back to the PD
+
+|                    | **Cooperate** | **Defect** |
+|:-------------------|:-------------:|:----------:|
+| **Cooperate**      |   -1, -1      |  -10, 0    |
+| **Defect**         |    0, -10     |  -5, -5    |
+
+
+How can we make (Cooperate; Cooperate) the rational equilibrium outcome in this game?
+
+. . . 
+
+Some possible solutions
+
+- **Change the payoffs**. A criminal group punishes snitchers harshly and from prison sentences can identify the defector.
+    - This lowers the payoff of Defect until it is no longer individually rational
+
+- **Change the time horizon**. If the game is repeated many times, prisoners can commit to always cooperate as long as the other cooperates
+    - Requires that both prisoners care about the payoff in the future
+
+
+## Institutional solutions for cooperation
+
+How do international organizations and agreements (where states are members) incorporate these insights?
+
+- **Change the payoffs**. Constant monitoring allows to easily identify the defectors that fail to comply with the agreed terms. Defectors can be punished 
+
+- **Change the time horizon**. Negotiations happen continuously and on many interrelated issues. The certainty of future interactions prevents defection, as states can threaten to retaliate or withdraw from the organization if cooperation is not achieved
+
+. . . 
+
+**Example**. The World Trade Organization Dispute Settlement Mechanism ([DSM](https://www.wto.org/english/tratop_e/dispu_e/disp_settlement_cbt_e/c1s3p3_e.htm)) includes a right to retaliate against offending parties
+
+
+## Institutional solutions for collective action
+
+::::{.columns .center}
+::: {.column width="70%"}
+Similar types of institutional solutions for collective action problems have been proposed by economist Mancur Olson
+
+- **Small groups**. In small groups, free-riding is less likely because individual effort has greater impact on the final outcome and is more observable
+    - Many international organizations have (relatively) few members
+    - Is it better to do the group work in 3 or in 30?
+
+- **Private benefits**. Private benefits that are conditional on contribution increase individual effort
+    - Health insurance for members of professional associations
+    - Access to data for members of trade unions
+
+- **Political entrepreneurs** (from Shepsle, Ch.9). Notable individual actors that exercise leadership and drive group formation
+
+
+:::
+::: {.column width="30%"}
+![](img/olson.jpg)
+:::
+::::
+
+
+## Limitations of the approach
+
+This approach to international institutions provides many insights on why certain institutions can promote cooperation and collective action relative to their absence
+
+However, it is important to note some limitations of the approach
+
+- "What is the effect of an institution" is a different *theoretical* question than "Why was this institution created as opposed to a different one"
+    - Empirically speaking, we will see that the first question presupposes the second. But for now, we focus on the theory
+- International institutions in reality are extremely complex and have many layers. This exposition oversimplifies them
+    - There is a reason: isolate their effect on collective behavior through channels based on rational incentives
+    - But we are abstracting from their inner working, their organizational aspects, the internal incentives that bureaucrats face, etc.
+    - For many relevant problems we may want to consider these incentives 
+- We are not considering domestic politics
+
+
+## Institutional solutions
+
+Now let's go back to our social dilemmas
+
+::: {.panel-tabset}
+
+### Example 1
+
+Nuclear disarmament during the cold war
+
+| **Actors** | **Action** | **What is the dilemma?** | **Institutional Solution** |
+|:-----------|:-----------|:-------------------------|:---------------------------|
+| US and USSR | Cooperate = Disarm; Defect = Keep/Build weapons | Each prefers the other to disarm while keeping own weapons. Mutual disarmament is better than arms race, but unilateral disarmament is dangerous | 
+
+
+### Example 2
+
+Overfishing (the tragedy of commons)
+
+| **Actors** | **Action** | **What is the dilemma?** | **Institutional Solution** |
+|:-----------|:-----------|:-------------------------|:---------------------------|
+| Individual fishers/countries | Cooperate = Limit catch; Defect = Overfish | Each fisher benefits from overfishing while others restrain, but collective overfishing depletes the resource | 
+
+
+### Example 3
+
+Sanctions to a foreign state
+
+| **Actors** | **Action** | **What is the dilemma?** | **Institutional Solution** |
+|:-----------|:-----------|:-------------------------|:---------------------------|
+| Multiple countries | Cooperate = Join sanctions; Defect = Continue trade | Each country prefers others to bear the cost of sanctions while maintaining own profitable trade relationships | 
+
+:::

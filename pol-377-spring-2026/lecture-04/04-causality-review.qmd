@@ -1,0 +1,96 @@
+---
+title: "International Political Economy"
+subtitle: "Lecture 4: Review of Causal Inference"
+date: "2026-02-03"
+---
+
+# Review of causality concepts {.section}
+
+## Class activity
+People make causal claims at each moment of daily life. Consider the following claims, which you may hear or read on the streets or in the media. We will evaluate each claim with the analytical mindset of the social scientist. That is, we will try to "break them down" into their logical components and evaluate if they are sound. 
+
+For each of the provided causal claim, think of and provide the following information:
+
+- **Units**: Who or what is studied? 
+- **Treatment**: What is the implied intervention or cause?
+- **Outcome**: What is the affected quantity that is considered?
+- **The Comparison**: Who are the treated units compared to? (Implicitly or explicitly).
+- **Threats to Identification**: Is the simple comparison appropriate or not? If not, why?
+- **Assumptions**: What must be true for us to claim the treatment caused the outcome?
+- **Research design**: What could an appropriate research design to test this claim with real world data?
+    - <u>Note</u>: Do not just imagine that you are a limitless scientist who can randomize everything. Think that you are bound to work with real-world, observational data that have already been generated. However, you do not need to focus on what design is most feasible or on how it could be implemented statistically. You can modify each component of the design (groups of units, type of data, etc.).
+
+
+## Example 1
+
+>"I was passing near the city hospital the other day and I saw some of the dismissed patients walk out. Some of them looked in really bad shape compared to me and other people I saw that day. I wonder if the hospital has any benefit at all."
+>
+> — Random person on the street
+
+## Example 2
+
+> "We added one lane to the Bologna-Milano highway but it's always congested, while the highway connecting Bergamo and Brescia has just 2 lanes but is always free. Clear evidence that the new lane was not a good use of taxpayer's money!"
+> 
+> — Italian Member of Parliament
+
+## Example 3
+
+> "Foreign aid doesn't work! I've been looking at the data from 1960 to 2000, and guess what? The countries that got the most aid money are exactly the ones with the worst economic growth. We're just throwing money down the drain!"
+> 
+> — Concerned policy analyst
+
+## Example 4
+
+> "Economic sanctions are completely useless! I analyzed all the sanctions imposed in the 20th century, and in 95% of the cases, the dictator just stayed in power. It's clear evidence that sanctions don't work at all."
+> 
+> — International relations expert
+
+## Example 5
+
+> "Oil kills democracy! Just look at any world map - all the Gulf countries are swimming in oil and they're all authoritarian. Meanwhile, Japan and Switzerland have basically no natural resources and they're perfectly democratic. The pattern is crystal clear!"
+> 
+> — Political commentator
+
+
+# Review of instrumental variables {.section}
+
+## Instrumental variables
+
+[insert DAG + example]
+
+Recall the main identification assumptions of the IV design
+
+- The instrument is random (or random after controlling for covariates)
+- The instrument has an effect on the treatment
+- The instrument has an effect on the outcome <u>only through the treatment</u>. This is called the Exclusion restriction
+
+**Exercise**: do the assumptions hold in each of these cases? If not, can you think of a better instrument?
+
+
+::: {.panel-tabset}
+
+### Example 1
+
+| Research Question | Treatment | Instrument | Outcome |
+|-------------------|-----------|------------|---------|
+| Does social pressure increase turnout? | Reading an appeal to vote | Randomized postcard with an appeal | Individual turnout |
+
+### Example 2
+
+| Research Question | Treatment | Instrument | Outcome |
+|-------------------|-----------|------------|---------|
+| Does education improve earnings? | Years of schooling | Quarter of birth | Annual income |
+
+### Example 3
+
+| Research Question | Treatment | Instrument | Outcome |
+|-------------------|-----------|------------|---------|
+| Do trade policies affect growth? | Free trade agreement | Geographic proximity | GDP per capita |
+
+### Example 4
+
+| Research Question | Treatment | Instrument | Outcome |
+|-------------------|-----------|------------|---------|
+| Does economic growth reduce civil conflict? | GDP per capita growth | Rainfall variation | Civil conflict incidence |
+
+:::

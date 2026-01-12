@@ -1,12 +1,345 @@
 ---
 title: "International Political Economy"
-subtitle: "Intro"
+subtitle: "Lecture 1: Introduction"
 date: "2026-01-20"
 ---
 
-## Welcome
+# Introductions {.section}
 
-Session 1
+## About me
+
+Who I am:
+
+- I am a political scientist 
+
+- I am a post-doctoral researcher, I work with Prof. Strijbis on his project [DIVIDE](https://data.snf.ch/grants/grant/10003605)
+
+- I am at Franklin since November 2025. Before, I have lived, studied and worked in Italy, the US, and France
+
+- If you are curious about my background, you can check [my website](https://giacomolemoli.com/)
+
+. . . 
+
+What I look for in this class:
+
+- I want you to learn about IPE 
+
+- I want to communicate with you as much as possible during the course
+    - This is an interactive course, you will be doing much of the job anyway
+    - Meet me during the week: clarify doubts, ask questions, discuss progress
+    - I am also interested in continued feedback from you about the course
+
+. . . 
+
+How to reach me:
+
+- Office: LAC 8
+- Office hours: Tuesdays and Fridays before class, 12.30pm-2.30pm
+- Email
+
+
+## About you
+
+I want you to tell everyone, in a few words:
+
+- Your name
+- The place you call "home"
+- Your first memory related to international politics or economics (broadly defined)
+
+
+# Course overview {.section}
+
+## This class
+
+International Political Economy (IPE): the study of interactions between economics and politics in the world economy
+
+There are different levels of analysis
+
+1. <u>Relations between states</u> (states as "autonomous" agents): international institutions, treaties, organizations
+
+2. <u>Domestic sources of international politics</u>: what drives states' posture in relations between states 
+    - e.g., accountability and representation of domestic voters and special interests
+
+3. <u>International sources of domestic politics</u>: the reverberations of international events or shocks into domestic societies and electorates 
+    - e.g., unequal costs and benefits for different social groups
+
+
+## Our approach 
+
+IPE is a subfield at the intersection of political science and economics. We will look at the world through the glasses of analytical (quantitative) political science
+
+- We will learn how (many if not most) contemporary political scientist analyze complex macro-level phenomena
+
+- That is, dissecting them into component parts within a unifying framework: rational choice
+
+- In short: people, politicians, governments, states... (*actors*) have goals and motivations and behave (*act*) according to them. In order to understand their behavior we need to start from what drives them
+
+- The goal is to arrive at understanding of facts that is generalizable across space and time
+
+. . . 
+
+Important: mathematical or statistical training is neither necessary nor required for this class. Our focus is on understanding and applying concepts
+
+## Requirements
+
+The final grade is based on
+
+- Midterm exam 
+- Group paper presentation (2 sessions throughout the course)
+- Individual research design (at the end of the course)
+- Class participation
+
+. . . 
+
+We incorporate in the course activities with external speakers @ Franklin
+
+
+## AI policy
+
+By the University's policy:
+
+- You are required to disclose the use of generative AI in your assignments
+- Submitting material not authored by you without proper acknowledgment will be considered plagiarism
+
+. . . 
+
+More generally, you must reflect on the difference between using AI to help [you]{.alert} learn and allow [your]{.alert} your unique skills to emerge **and** using AI to pretend you have learned
 
 
 
+# Views of IPE {.section}
+
+## What is IPE
+
+> We can view international political economy as the intersection of the substantive area studied by economics -- production and exchange of marketable means of want satisfaction -- with the process by which power is exercised that is central to politics.
+>
+> Keohane (1984, Ch. 2)
+
+
+## Liberalism
+
+::::{.columns}
+::: {.column .center}
+![Adam Smith](img/Adam_Smith_The_Muir_portrait.jpg){width="50%"}
+:::
+::: {.column .center}
+![David Ricardo](img/Portrait_of_David_Ricardo_by_Thomas_Phillips.jpg){width="50%"}
+:::
+::::
+
+- The core actors are individuals as producers and consumers
+
+- Free trade is a ["positive-sum"]{.hover-note data-tooltip="This means that all parties can derive a net benefit from trade. In constrast, zero-sum means that total benefits are zero, so someone's gains must be someone else's losses."} game which makes all parties involved better off
+
+- Free markets are the most efficient way to allocate resources
+
+- Economics and politics are autonomous domains (and should not be mixed)
+
+- The government's role should be limited to setting "fair" rules of the game and provide public goods (e.g., property rights protection, defense...) so that the market can flourish
+
+- Absence of conflict is natural: mutual economic interest from trade prevents wars
+
+
+
+## Marxism
+
+::::{.columns}
+::: {.column .center}
+![Karl Marx](img/Karl_Marx_by_John_Jabez_Edwin_Mayall_1875_-_Restored_%26_Adjusted_(3x4_cropped_b).png){width="50%"}
+:::
+::: {.column .center}
+![Vladimir Lenin](img/Lenin_in_1920_(cropped).jpg){width="50%"}
+:::
+::::
+
+- The core actors are the classes: capitalists (owners of means of production) and workers (owners of labor)
+
+- The economic-political system is shaped by capitalism and conflicting economic interests
+
+- Politics is subordinated to economic forces
+
+- Capitalism expands globally to find new markets and exploitable labor $\implies$ imperialism
+
+- Capitalism creates a hierarchical international system (core-periphery). This system maintains peripheral countries underdeveloped
+
+- Conflict is natural
+
+
+
+## Realism
+
+::::{.columns}
+::: {.column .center}
+![Niccolò Machiavelli](img/Portrait_of_Niccol%C3%B2_Machiavelli_by_Santi_di_Tito.jpg){width="50%"}
+:::
+::: {.column .center}
+![Carl von Clausewitz](img/Clausewitz.jpg){width="50%"}
+:::
+::::
+
+
+- The core actors are the states
+
+- States' decisions are driven by power, its use and the desire to increase it relative to other states
+
+- Economics is subordinated to political forces 
+
+- States can undermine free trade (e.g., reduce their engagement or monopolize parts of the economy) if this can strengthen their power vis-a-vis other states in other ways
+
+- Absence of conflict is possible if a single actor is so powerful to enforce rules $\implies$ Hegemonic stability
+
+
+
+## Institutionalism
+
+::::{.columns}
+::: {.column .center}
+![Ronald Coase](img/Coase_scan_11_edited_(cropped).jpg){width="50%"}
+:::
+::: {.column .center}
+![Robert Keohane](img/Robert_O._Keohane_at_Chatham_House_2015_(cropped).jpg){width="50%"}
+:::
+::::
+
+- The core actors are states
+
+- States have common interests, but self-interest prevents from pursuing it 
+
+- They create **institutions** (codified "rules of the game") to enforce cooperation for mutual benefit
+
+- Economics and politics interact thanks to the incentives and **rational choices** of states
+
+- Absence of conflict (cooperation) is not natural, but can be achieved
+
+
+
+
+## The rational choice approach
+
+All traditional theories provide important, sometimes crucial, insights. Our approach will be to use the prevailing methodological framework in contemporary political science (and the defining methodological framework of economics): [rational choice]{.alert}
+
+[Institutionalist theory is an example of rational choice]{.remark}
+
+. . . 
+
+There are several advantages. We can incorporate some key insights of traditional theories incorporated
+
+- Self-interest
+- Conflicts of interest
+- Inequality in power and wealth
+- Interactions of politics and economics
+- Institutions
+- etc.
+
+
+## The rational choice approach
+
+The **rational choice** approach is built on a few general postulates:
+
+- The <u>individual</u> is the basic unit of analysis
+- Individuals have motivations (<u>preferences</u>) and <u>beliefs</u> about the world (due to uncertainty)
+- Their choices are <u>constrained</u> by objective limitations or existing rules
+- Individuals <u>act</u> (choose actions) according to their preferences, beliefs, and constraints
+
+. . . 
+
+Of course we generally don't know preferences or beliefs of others. We use *assumptions* about them to build models that can explain patterns of behavior. It is well understood that models are ["wrong but sometimes useful"](https://en.wikipedia.org/wiki/All_models_are_wrong)
+
+. . . 
+
+Methodological individualism does **not** mean that we believe all people are selfish in a caricatural sense or have only material motivations.
+
+[For instance, we will see that it is difficult to understand the backlash against globalization without non-material concepts such as group, dignity, community, culture]{.remark}
+
+Incorporating these concepts into rational choice is challenging, but many people (including the DIVIDE team) work on that all the time
+
+
+## Actors and relations in IPE
+
+::::{.columns}
+::: {.column width="60%"}
+
+```{r}
+#| engine: tikz
+#| echo: false
+#| fig-align: center
+#| fig-ext: svg
+
+\begin{tikzpicture}[
+    node distance=4.5cm,  % <--- Increased distance to make arrows longer
+    % --- Styles ---
+    levelbox/.style={
+        rectangle,
+        draw=black!60,
+        fill=blue!10,
+        rounded corners=5pt,
+        minimum width=7cm,
+        minimum height=1.5cm,
+        align=center,
+        font=\sffamily\bfseries\large
+    },
+    upstream/.style={
+        ->, >=stealth,
+        line width=2pt,
+        color=black!70
+    },
+    downstream/.style={
+        ->, >=stealth,
+        line width=1.5pt,
+        color=red!70,
+        dashed
+    },
+    % New style for the labels on the arrows
+    arrowlabel/.style={
+        midway,
+        fill=white,         % Hides the arrow line behind the text
+        align=center,
+        font=\small\sffamily,
+        text width=4cm,     % Forces text to wrap if its too long
+        text=black!80
+    }
+]
+
+    % --- Nodes ---
+    \node[levelbox] (intl) {Relations between States};
+    \node[levelbox, below of=intl] (pol) {Elected Politicians};
+    \node[levelbox, below of=pol] (voters) {Voters and Society};
+
+    % --- Arrows ---
+    
+    % Upstream 1: Voters -> Politicians
+    \draw[upstream] (voters.north) -- node[arrowlabel] {Voters elect / keep politicians accountable} (pol.south);
+    
+    % Upstream 2: Politicians -> International
+    \draw[upstream] (pol.north) -- node[arrowlabel] {Politicians decide on relations} (intl.south);
+
+    % --- Downstream (Feedback) ---
+    
+    % Politicians -> Voters (Right side)
+    \draw[downstream] (pol.east) to[out=0, in=0, looseness=1.5] node[midway, right, font=\footnotesize, text=black] {Policy Impact} (voters.east);
+
+    % International -> Voters (Left side)
+    \draw[downstream] (intl.west) to[out=180, in=180, looseness=1.2] node[midway, left, font=\footnotesize, text=black] {Shocks} (voters.west);
+
+\end{tikzpicture}
+```
+:::
+::: {.column width="40%"}
+
+We often need to "aggregate" up to the level of states or governments to understand IPE phenomena
+
+Treating states as unitary actors in a model is equivalent to assuming that who runs the state has full mandate on international issues (or that only its preferences matter)
+
+This may be justified or not, depending on the specific theory and phenomenon we want to explain
+
+The RC approach helps us understand and evaluate constraints of high-level actors and the consequences of their actions
+
+:::
+::::
+
+
+## Next
+
+We will use the rational choice framework to understand the nature of problems that require international [cooperation]{.alert}
+
+That is, problems where "individual" incentives may clash with collective goals (trade liberalization, climate change, etc.)

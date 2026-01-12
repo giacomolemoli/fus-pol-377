@@ -3,17 +3,23 @@ project:
 
 format:
   revealjs:
+    width: 1600
+    height: 900
+    fontsize: 32px
     embed-resources: true
     theme: default
     logo: ../assets/fus-logo.png
     css: ../assets/custom.scss
     slideNumber: true
     incremental: true
-    transition: fade
+    scrollable: true
+    transition: slide
+    callout-appearance: default
+    callout-icon: false
 
 execute:
-  echo: true
+  echo: false
   warning: false
-
+  engine: knitr
 
 

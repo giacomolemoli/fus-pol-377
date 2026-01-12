@@ -1,0 +1,125 @@
+/*-- scss:rules --*/
+
+/* 1. Spacing INSIDE a paragraph (Line Height) */
+.reveal p {
+  line-height: 1.6;        /* Increase for readability (default is often 1.2 or 1.3) */
+  margin-bottom: 1.5rem;   /* Spacing AFTER a paragraph (between blocks of text) */
+}
+
+/* 2. Spacing between Bullet Points */
+.reveal li {
+  margin-bottom: 10px;     /* Adds breathing room between list items */
+}
+
+/* 3. Spacing between major elements (e.g., Header and Text) */
+.reveal h2, .reveal h3 {
+  margin-bottom: 30px !important; /* Push text further away from the title */
+}
+
+/*-- scss:hover-notes --*/
+/* 1. The word triggers */
+.hover-note {
+  color: #FF6600;            /* Accent color */
+  border-bottom: 1px dotted; /* Visual cue */
+  cursor: help;
+  position: relative;
+  display: inline-block;
+}
+
+/* 2. The compact, multi-line box */
+.hover-note::before {
+  content: attr(data-tooltip);
+  
+  /* Positioning */
+  position: absolute;
+  bottom: 120%;              /* Lift it slightly higher so it doesn't touch the text */
+  left: 50%;
+  transform: translateX(-50%); /* Centers the box relative to the word */
+  
+  /* Size and Wrapping Logic */
+  width: max-content;        /* Shrink-wrap to fit text... */
+  max-width: 250px;          /* ...but stop growing at 250px and wrap */
+  white-space: normal;       /* Allows text to wrap onto multiple lines */
+  text-align: center;        /* Center the text inside the box */
+  
+  /* Visual Appearance */
+  background-color: #333;
+  color: #fff;
+  padding: 10px;             /* More padding for a "box" feel */
+  border-radius: 6px;
+  font-size: 0.5em;          /* Keep text small relative to slide headers */
+  line-height: 1.4;          /* Improve readability of multi-line text */
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.3); /* Drop shadow for depth */
+
+  /* Hiding/Showing Logic */
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease-in-out;
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* 3. The little triangle arrow (Optional, creates a speech-bubble look) */
+.hover-note::after {
+  content: "";
+  position: absolute;
+  bottom: 90%; /* Position right below the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #333 transparent transparent transparent;
+  
+  /* Hiding/Showing Logic (must match the box) */
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+/* 4. Trigger on hover */
+.hover-note:hover::before,
+.hover-note:hover::after {
+  opacity: 1;
+  visibility: visible;
+  bottom: 110%; /* Slide up slightly for a smooth animation effect */
+}
+.hover-note:hover::after {
+  bottom: 100%; /* Adjust arrow position on hover */
+}
+
+/*-- scss:callout-boxes --*/
+/* Target paragraphs INSIDE callout boxes */
+.reveal .callout p {
+  line-height: 1.6;        /* Match your global line height */
+  margin-bottom: 1.5rem;   /* Match your global paragraph spacing */
+}
+
+/* Target list items INSIDE callout boxes */
+.reveal .callout li {
+  margin-bottom: 10px;     /* Match your global list spacing */
+  line-height: 1.6;
+}
+
+
+/* -- Specific styles for different callout types */
+.alert {
+  color: #d62728;
+  font-weight: bold;
+}
+
+
+/*-- signpost for remarks in slide --*/
+/* Define the signpost style */
+.remark::before {
+  content: "👉";           /* The symbol (see list below) */
+  color: #FF6600;         /* Your accent color */
+  margin-right: 10px;     /* Space between arrow and text */
+  font-weight: bold;
+  display: inline-block;
+}
+
+/* Optional: Make the text itself look distinct */
+.remark {
+  font-style: italic;
+  color: #555;
+}
