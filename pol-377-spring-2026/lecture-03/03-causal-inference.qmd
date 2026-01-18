@@ -1,76 +1,246 @@
 ---
 title: "International Political Economy"
-subtitle: "Lecture 3: A Primer in Causal Inference"
+subtitle: "Lecture 3: Introduction to Causal Inference"
 date: "2026-01-27"
 ---
 
 # Causal Inference from a Research Design Perspective {.section}
 
 ## Causal research questions
-We wear the hat of IPE empirical researchers: we use data to answer questions about the world
+We are now empirical IPE researchers: we use data to answer questions about the world
+
+. . . 
 
 We always start by formulating a research question (RQ). 
 
 ::: {.callout-note title="Our research question"}
-Do World Bank financing projects increase development?
+Do World Bank financing projects increase human development?
 :::
 
- 
+ The RQ can be derived from [theory]{.hover-note data-tooltip="e.g., a large theoretical literature in economics studies the causes of local development. WB projects are designed to provide several of the factors of development, so it is natural to study their effects as an application of some theories"} or from a "real-world" [puzzle]{.hover-note data-tooltip="e.g., the WB devotes a lot of resources to projects, so it is necessary to understand if they work as intended."}
 
-
-The RQ can be derived from [theory]{.hover-note data-tooltip="e.g., a large theoretical literature in economics studies the causes of local development. WB projects are designed to provide several of the factors of development, so it is natural to study their effects as an application of some theories"} or from a "real-world" [puzzle]{.hover-note data-tooltip="e.g., the WB devotes a lot of resources to projects, so it is necessary to understand if they work as intended."}
-
+. . . 
 
 The RQs we care about are often (but not always) **causal**: we ask *if* WB projects **cause** development and if so, *how much*
+
+. . . 
 
 But what does it mean for a question to be causal? How do we proceed with our empirical study if we want to answer a causal question?
 
 ## Causality and counterfactuals
 
-The key notion in causal inference is **counterfactual**: what would have happened to a unit in some alternative state of the world where the "cause" we want to study did not happen
+[Causal inference]{.alert} is the process of determining causal effects  
 
-Doing **causal inference** is first of all thinking about **counterfactuals**
+. . . 
 
-[Insert figure here]
+The key notion in causal inference is [counterfactual]{.alert}: what would have happened to a unit in an alternative state of the world where the "cause" we want to study did not happen
 
-E.g., What would have happened to districts with WB projects had the project not been implemented?
-and/or
-what would have happened to districts without WB projects had the project been implemented?
+. . . 
+
+- What would have happened to districts **with** WB projects had the project **not** been implemented?
+- What would have happened to districts **without** WB projects **had** the project been implemented?
+
 
 ## Causal effects
 
-[Insert figure here]
-
 Consider our district under two different counterfactual conditions:
+
+
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| fig-width: 10
+#| fig-height: 6
+#| out-width: "800px"
+#| out-height: "400px"
+
+library(grid)
+
+grid.newpage()
+
+# Create viewport
+pushViewport(viewport(width = 1, height = 1))
+
+# Left square - Untreated state
+grid.rect(x = 0.25, y = 0.55, width = 0.35, height = 0.5, 
+          gp = gpar(fill = "gray90", col = "black", lwd = 4))
+grid.text("District\n(Untreated)", x = 0.25, y = 0.2, 
+          gp = gpar(fontsize = 28))
+
+# Right square - Treated state  
+grid.rect(x = 0.75, y = 0.55, width = 0.35, height = 0.5, 
+          gp = gpar(fill = "gray90", col = "black", lwd = 4))
+grid.text("District\n(Treated)", x = 0.75, y = 0.2, 
+          gp = gpar(fontsize = 28))
+
+# Stylized building in the treated state
+# Building body
+grid.rect(x = 0.75, y = 0.55, width = 0.15, height = 0.28, 
+          gp = gpar(fill = "lightblue", col = "black", lwd = 3))
+# Roof (triangle approximation using polygon)
+grid.polygon(x = c(0.675, 0.75, 0.825), y = c(0.69, 0.76, 0.69),
+             gp = gpar(fill = "lightblue", col = "black", lwd = 3))
+# Windows
+for (wx in c(0.71, 0.79)) {
+  for (wy in c(0.46, 0.53, 0.60)) {
+    grid.rect(x = wx, y = wy, width = 0.03, height = 0.04,
+              gp = gpar(fill = "white", col = "black", lwd = 1))
+  }
+}
+
+# Label for counterfactual states
+grid.text("Two Counterfactual States", x = 0.5, y = 0.05, 
+          gp = gpar(fontsize = 32, fontface = "bold"))
+
+popViewport()
+```
 
 - WB project $\implies$ treated
 - no WB project $\implies$ untreated
 
-Suppose the only difference between the two conditions is the treatment (project implemented or not), everything else remains unchanged
+. . . 
 
-Call $y$ the outcome variable (some measure of development, e.g. life expectancy or electricity access)
+The only difference between the two conditions is the treatment (project implemented or not), everything else remains unchanged
+
+
+
+## Causal effects
+
+Consider our district under two different counterfactual conditions:
+
+
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| fig-width: 10
+#| fig-height: 6
+#| out-width: "800px"
+#| out-height: "400px"
+
+library(grid)
+
+grid.newpage()
+
+# Create viewport
+pushViewport(viewport(width = 1, height = 1))
+
+# Left square - Untreated state
+grid.rect(x = 0.25, y = 0.55, width = 0.35, height = 0.5, 
+          gp = gpar(fill = "gray90", col = "black", lwd = 4))
+grid.text("District\n(Untreated)", x = 0.25, y = 0.2, 
+          gp = gpar(fontsize = 28))
+
+# Right square - Treated state  
+grid.rect(x = 0.75, y = 0.55, width = 0.35, height = 0.5, 
+          gp = gpar(fill = "gray90", col = "black", lwd = 4))
+grid.text("District\n(Treated)", x = 0.75, y = 0.2, 
+          gp = gpar(fontsize = 28))
+
+# Stylized building in the treated state
+# Building body
+grid.rect(x = 0.75, y = 0.55, width = 0.15, height = 0.28, 
+          gp = gpar(fill = "lightblue", col = "black", lwd = 3))
+# Roof (triangle approximation using polygon)
+grid.polygon(x = c(0.675, 0.75, 0.825), y = c(0.69, 0.76, 0.69),
+             gp = gpar(fill = "lightblue", col = "black", lwd = 3))
+# Windows
+for (wx in c(0.71, 0.79)) {
+  for (wy in c(0.46, 0.53, 0.60)) {
+    grid.rect(x = wx, y = wy, width = 0.03, height = 0.04,
+              gp = gpar(fill = "white", col = "black", lwd = 1))
+  }
+}
+
+# Label for counterfactual states
+grid.text("Two Counterfactual States", x = 0.5, y = 0.05, 
+          gp = gpar(fontsize = 32, fontface = "bold"))
+
+popViewport()
+```
+
+
+Call $y$ the outcome variable (e.g., health, life expectancy)
+
+. . . 
 
 The **unit causal effect** (or treatment effect) of the project is the difference in $y$ of the district (unit) between the two conditions 
 
-The **average causal effect** (or treatment effect) of the project is the average of the unit treatment effects for all units 
+The **average causal effect** (or treatment effect) of the project is the average of the unit treatment effects for all units (all districts)
 
+. . . 
 
 What is the problem here?
 
-
 ## Causality and counterfactuals
 
-[Insert figure here]
+```{r}
+#| echo: false
+#| fig-align: center
+#| fig-width: 10
+#| fig-height: 6
+#| out-width: "800px"
+#| out-height: "400px"
 
-The problem is that either the project (the treatment) was implemented or it wasn't. A district (unit) cannot be treated and untreated at the same time
+library(grid)
 
-This is **the fundamental problem of causal inference**
+grid.newpage()
+
+# Create viewport
+pushViewport(viewport(width = 1, height = 1))
+
+# Left square - Untreated state (DASHED - unobserved)
+grid.text("UNOBSERVED", x = 0.25, y = 0.88, 
+          gp = gpar(fontsize = 20, col = "red", fontface = "italic"))
+grid.rect(x = 0.25, y = 0.55, width = 0.35, height = 0.5, 
+          gp = gpar(fill = "gray90", col = "black", lwd = 4, lty = "dashed"))
+grid.text("District\n(Untreated)", x = 0.25, y = 0.2, 
+          gp = gpar(fontsize = 28))
+
+# Right square - Treated state (SOLID - observed)
+grid.text("OBSERVED", x = 0.75, y = 0.88, 
+          gp = gpar(fontsize = 20, col = "darkgreen", fontface = "italic"))
+grid.rect(x = 0.75, y = 0.55, width = 0.35, height = 0.5, 
+          gp = gpar(fill = "gray90", col = "black", lwd = 4))
+grid.text("District\n(Treated)", x = 0.75, y = 0.2, 
+          gp = gpar(fontsize = 28))
+
+# Stylized building in the treated state
+# Building body
+grid.rect(x = 0.75, y = 0.55, width = 0.15, height = 0.28, 
+          gp = gpar(fill = "lightblue", col = "black", lwd = 3))
+# Roof (triangle approximation using polygon)
+grid.polygon(x = c(0.675, 0.75, 0.825), y = c(0.69, 0.76, 0.69),
+             gp = gpar(fill = "lightblue", col = "black", lwd = 3))
+# Windows
+for (wx in c(0.71, 0.79)) {
+  for (wy in c(0.46, 0.53, 0.60)) {
+    grid.rect(x = wx, y = wy, width = 0.03, height = 0.04,
+              gp = gpar(fill = "white", col = "black", lwd = 1))
+  }
+}
+
+# Label for counterfactual states
+grid.text("Two Counterfactual States", x = 0.5, y = 0.05, 
+          gp = gpar(fontsize = 32, fontface = "bold"))
+
+popViewport()
+```
+
+The problem is that either the project (the treatment) was implemented or it wasn't. A district (unit) cannot be treated and untreated at the same time. This is the [fundamental problem of causal inference]{.alert}
+
+. . . 
 
 ::: {.callout-important title="The fundamental problem of causal inference"}
 We cannot observe the same unit under two conditions, so the causal effect for a single unit cannot be observed
 :::
 
-We also say that the effect for a single unit cannot be **identified** from the data
+. . . 
+
+We also say that the effect for a single unit cannot be [identified]{.alert} from the data
+
+. . . 
 
 What do we do, then?
 
@@ -79,16 +249,80 @@ What do we do, then?
 
 Suppose projects (treatment) are allocated **randomly** to districts (units)
 
-[Insert figure here]
+```{r}
+#| echo: false
+#| fig-align: center
+#| fig-width: 12
+#| fig-height: 6
+#| out-width: "800px"
+#| out-height: "400px"
+
+library(grid)
+
+grid.newpage()
+
+# Create viewport
+pushViewport(viewport(width = 1, height = 1))
+
+# Define positions for 4 districts (2x2 grid)
+positions <- data.frame(
+  x = c(0.25, 0.75, 0.25, 0.75),
+  y = c(0.65, 0.65, 0.35, 0.35),
+  treated = c(FALSE, TRUE, TRUE, FALSE)  # Districts 2 and 3 are treated
+)
+
+# Draw all 4 districts
+for (i in 1:4) {
+  # Draw rectangle (all solid borders)
+  grid.rect(x = positions$x[i], y = positions$y[i], 
+            width = 0.3, height = 0.22, 
+            gp = gpar(fill = "gray90", col = "black", lwd = 3))
+  
+  # Add stylized building for treated districts
+  if (positions$treated[i]) {
+    # Add stylized building for treated districts
+    # Building body
+    grid.rect(x = positions$x[i], y = positions$y[i], 
+              width = 0.08, height = 0.12, 
+              gp = gpar(fill = "lightblue", col = "black", lwd = 2))
+    # Roof
+    grid.polygon(x = c(positions$x[i] - 0.05, positions$x[i], positions$x[i] + 0.05), 
+                 y = c(positions$y[i] + 0.06, positions$y[i] + 0.09, positions$y[i] + 0.06),
+                 gp = gpar(fill = "lightblue", col = "black", lwd = 2))
+    # Windows (smaller)
+    for (wx_offset in c(-0.02, 0.02)) {
+      for (wy_offset in c(-0.03, 0, 0.03)) {
+        grid.rect(x = positions$x[i] + wx_offset, y = positions$y[i] + wy_offset, 
+                  width = 0.015, height = 0.018,
+                  gp = gpar(fill = "white", col = "black", lwd = 0.5))
+      }
+    }
+  }
+}
+
+# Label at bottom
+grid.text("Sample of Districts with Treatment Allocated", 
+          x = 0.5, y = 0.05, 
+          gp = gpar(fontsize = 26, fontface = "bold"))
+
+popViewport()
+```
 
 - Districts with WB project $\implies$ treatment group
 - Districts without WB project $\implies$ control group
 
+. . . 
+
 With this *random assignment*, we can identify the **average causal effect** of projects in the sample (i.e., the average of unit causal effects)
 
-Key intuition: random assignment to treatment is "blind" to any differences between units. *On average*, the control group is very similar to the treated group if it were not treated
-- Example 1: height [add slide?]
-- Example 2: drug in hospital [add slide?]
+. . . 
+
+Key intuition: random assignment is "blind" to any differences between units. *On average*, the control group is very similar to the treated group if it were not treated
+
+- Example 1: height 
+- Example 2: drug in hospital 
+
+. . . 
 
 In causal inference, we mostly focus on the **ATE** (average treatment effect).
 
@@ -100,9 +334,7 @@ In papers, people sometimes refer to the [ATT]{.hover-note data-tooltip="Average
 
 ## Estimate an effect under random assignment
 
-If the WB randomizes projects across districts, we can simply compare $y$ between the treated and control group.
-
-[Insert DAG w/o confounding]
+If the WB randomizes projects across districts, we can simply compare the average $y$ between the treated and control group.
 
 ```{r}
 #| echo: false
@@ -123,12 +355,13 @@ dag <- dagify(
 
 ggdag(dag) +
   theme_dag_blank() +
-  labs(title = "DAG without confounding: D → Y") +
+  labs(title = "Causal effect: D → Y") +
   theme(plot.title = element_text(hjust = 0.5))
 ```
 
 
-We can do this with a simple *linear regression*.
+We can do this with a *linear regression*.
+
 
 $y = \alpha + \beta D + \varepsilon$
 
@@ -140,15 +373,23 @@ $y = \alpha + \beta D + \varepsilon$
 ## Problems of causal inference when we move outside of experiments
  If we want to estimate the effect of a factor $x$ on an outcome $y$ we need a sample of units where $x$ is assigned randomly. The average causal effect of $x$ is the difference in $y$ between the two groups.
 
+ . . . 
+
  But how likely is it that something is randomly assigned in the real world?
 
- In a **randomized experiment**, this is guaranteed by definition: the researcher randomizes the assignment
+. . . 
+
+ Researchers (doctors and social scientsts) conduct **randomized experiments** to estimate causal effects with certainty
 
 But we social scientists are interested in causal effects (e.g., civil war violence $\rightarrow$ political participation; trade flows $\rightarrow$ growth) where randomization is obviously <u>unfeasible</u> and/or <u>unethical</u>
 
 In these cases, we can only use events and data that have already happened in the world
 
-To do causal inference, we need assumptions (called **identification** assumptions) about how "randomly" the "treatment" is assigned
+. . . 
+
+To do causal inference, we need assumptions (called [identification assumptions]{.alert}) about how "randomly" the "treatment" is assigned
+
+. . . 
 
 We can do causal inference only if our assumptions are realistic (i.e., very likely to be satisfied)
 
@@ -157,9 +398,7 @@ This depends on our *knowledge* of the assignment process in the real world
 
 ## Estimate an effect under endogeneity
 
-Now imagine that the WB decides where to start a project based on local poverty conditions: districts with lower income have a higher probability of being assigned a project.
-
-[insert DAG w/ confounding]
+Imagine that the WB decides where to start a project based on local poverty conditions: districts with lower income have a higher probability of being assigned a project.
 
 ```{r}
 #| echo: false
@@ -179,17 +418,26 @@ dag_confounded <- dagify(
                 y = c(income = 2, D = 1, y = 1))
 )
 
-ggdag(dag_confounded) +
+ggdag(dag_confounded, node_size = 20) +
   theme_dag_blank() +
   labs(title = "DAG with confounding: Income affects both D and Y") +
   theme(plot.title = element_text(hjust = 0.5))
 ```
 
 
+. . . 
+
 If we simply compare treated and non-treated districts as before, and run $y=\alpha + \beta D + \varepsilon$, our $\beta$ will be
 $$\beta= \underbrace{\text{ATE}}_{\text{causal effect}} + \underbrace{\text{pre-existing income differences}}_{\text{bias}}$$
 
-This variable causes both the treatment and the outcome: it is what we call a problem of [*selection*]{.hover-note data-tooltip="Selection in this case means 'selection into treatment', that is units choose to be treated, or are chosen to be treated, for non-random reasons."} or [*endogeneity*]{.hover-note data-tooltip="Endogeneity means that the treatment assignment depends on some characteristics of the units (it is 'endogenous' to the units themselves). Its contrary, Exogeneity, means that the treatment is independent of the unit characteristics, or random."} or [*confounding*]{.hover-note data-tooltip="Meaning that if we ignore the income variable, it will confound our estimate of the ATE."} or [*omitted variable*]{.hover-note data-tooltip="Income is the variable that gives us problems if omitted."}.
+
+. . . 
+
+Intuition: if two things change at the same time, we are not sure which one was the cause
+
+. . . 
+
+We call this a problem of [*selection*]{.hover-note data-tooltip="Selection in this case means 'selection into treatment', that is units choose to be treated, or are chosen to be treated, for non-random reasons."} or [*endogeneity*]{.hover-note data-tooltip="Endogeneity means that the treatment assignment depends on some characteristics of the units (it is 'endogenous' to the units themselves). Its contrary, Exogeneity, means that the treatment is independent of the unit characteristics, or random."} or [*confounding*]{.hover-note data-tooltip="Meaning that if we ignore the income variable, it will confound our estimate of the ATE."} or [*omitted variable*]{.hover-note data-tooltip="Income is the variable that gives us problems if omitted."}.
 
 This is what we mean when we say that <u>correlation is not causation</u>
 
@@ -213,7 +461,7 @@ dag_confounded <- dagify(
                 y = c(income = 2, D = 1, y = 1))
 )
 
-ggdag(dag_confounded) +
+ggdag(dag_confounded, node_size = 20) +
   theme_dag_blank() +
   labs(title = "DAG with confounding: Income affects both D and Y") +
   theme(plot.title = element_text(hjust = 0.5))
@@ -230,8 +478,6 @@ $\beta=\text{ATE}$
 
 ## Common forms of endogeneity
 
-[insert DAG]
-
 ```{r}
 #| echo: false
 #| fig-width: 12
@@ -244,15 +490,15 @@ library(patchwork)
 
 # DAG 1: Confounding with generic confounder
 dag_confounding <- dagify(
-  y ~ D + confounder,
-  D ~ confounder,
-  coords = list(x = c(confounder = 2, D = 1, y = 3),
-                y = c(confounder = 2, D = 1, y = 1))
+  y ~ D + C,
+  D ~ C,
+  coords = list(x = c(C = 2, D = 1, y = 3),
+                y = c(C = 2, D = 1, y = 1))
 )
 
 plot1 <- ggdag(dag_confounding) +
   theme_dag_blank() +
-  labs(title = "Confounding") +
+  labs(title = "Common cause") +
   theme(plot.title = element_text(hjust = 0.5))
 
 # DAG 2: Reverse causality
@@ -264,27 +510,35 @@ dag_reverse <- dagify(
 
 plot2 <- ggdag(dag_reverse) +
   theme_dag_blank() +
-  labs(title = "Reverse Causality") +
+  labs(title = "Reverse causality") +
   theme(plot.title = element_text(hjust = 0.5))
 
 # Combine plots side by side
 plot1 | plot2
 ```
 
-- common cause
-- reverse causality
 
-## The need for causal research design
+- Common cause: some other variable is causing both the treatment and the outcome
+- Reverse causality: the outcome causes the treatment and not vice-versa
 
-In this example, we imagined we knew the source of endogeneity or confounding: income. Therefore, when we compare units with the same income level, treatment is random between them.
+## Causal research design
 
-If we planned this study before collecting the data, our **research design** would be based on this assumption and we would plan to run a linear regression controlling for income to cleanly estimate the ATE.
+In this example, we imagined we knew the source of endogeneity or confounding: income. Therefore, when we compare units with the same income level, treatment is random between them
 
-Now, in your mind, replace "WB projects" with "civil war" or "trade flows". You immediately see how complex the assignment process is for real-world "treatments" and how likely endogeneity is.
+. . . 
 
-To make causal claims on these topics we have to design our analyses thinking carefully about the assignment process to overcome endogeneity
+If we planned this study before collecting the data, our [research design]{.alert} would be based on this assumption and we would plan to run a linear regression controlling for income to cleanly estimate the ATE
+
+. . . 
+
+Now, in your mind, replace "WB projects" with "civil war" or "trade flows". You immediately see how complex the assignment process is for real-world "treatments" and how likely endogeneity is
+
+. . . 
+
+To make causal claims on these topics we have to design our analyses thinking carefully about the assignment process in the real world to overcome endogeneity
 
 We can look for details of the actual assignment process to "find" the appropriate counterfactuals in the data
+
 
 # Common Research Designs in IPE {.section}
 
@@ -292,7 +546,7 @@ We can look for details of the actual assignment process to "find" the appropria
 
 The "gold standard" of causal inference. Treatment assignment (and identification) is controlled by the researcher 
 
-[insert DAG + example]
+. . . 
 
 Less common in IPE than in other fields (because IPE is mostly concerned with things that "cross borders")
 
@@ -314,21 +568,51 @@ Less common in IPE than in other fields (because IPE is mostly concerned with th
 
 Circumstances in the real world where something "happens by chance"
 
-[insert DAG + example]
+. . . 
 
 Such circumstances exist, especially in nature (e.g., earthquakes). In the human world they are hardly credible without further qualifications
 
+. . . 
+
 The question to ask is always: who "decides" the treatment? What do they know? What are their goals?
 
-The answer to this question reveals plausible research designs.
+. . . 
+
+The answer to this question reveals plausible research designs
+
+
 
 ## Selection on observables
 
 If we believe that the "endogeneity" of treatment is due to known, observed variables, we can collect them and "control" for them
 
-[insert DAG + example]
+```{r}
+#| echo: false
+#| fig-width: 6
+#| fig-height: 4
+#| out-height: "400px"    
+#| out-width: "auto"      
+#| 
+library(ggdag)
+library(ggplot2)
+
+# Create a DAG with confounding
+dag_confounded <- dagify(
+  y ~ D + C,
+  D ~ C,
+  coords = list(x = c(C = 2, D = 1, y = 3),
+                y = c(C = 2, D = 1, y = 1))
+)
+
+ggdag(dag_confounded, node_size = 20) +
+  theme_dag_blank() +
+  labs(title = "Selection on observables: C causes D and Y") +
+  theme(plot.title = element_text(hjust = 0.5))
+```
 
 This is analogous to running little experiments between units with the same values of the variables, and taking the average of the effects from these experiments.
+
+. . . 
 
 Different ways to do it:
 
@@ -338,9 +622,10 @@ $y = \alpha + \beta D + \gamma \text{(control variables)} + \varepsilon$
 
 - <u>Matching</u>. Other techniques to compare "more similar" units, following a similar logic to "controlling". We will not go into the details in this class. If you find them, just know that they are similar to controlling.
 
+
 ## Instrumental variables
 
-If we believe that the "endogeneity" of treatment is due to unobserved variables, control is insufficient (we lack the control variables). An **instrumental variable** can solve this problem.
+If we believe that the "endogeneity" of treatment is due to unobserved variables, control is insufficient (we lack the control variables). An [instrumental variable]{.alert} can solve this problem
 
 ```{r}
 #| echo: false
@@ -354,28 +639,61 @@ library(ggplot2)
 
 # Create an IV DAG
 dag_iv <- dagify(
-  y ~ D + confounder,
-  D ~ Z + confounder,
-  coords = list(x = c(Z = 1, confounder = 2.5, D = 2, y = 4),
-                y = c(Z = 2, confounder = 3, D = 1, y = 1))
+  y ~ D + C,
+  D ~ Z + C,
+  coords = list(x = c(Z = 1, C = 2.5, D = 2, y = 4),
+                y = c(Z = 2, C = 3, D = 1, y = 1))
 )
 
 ggdag(dag_iv) +
   theme_dag_blank() +
-  labs(title = "Instrumental Variables: Z affects D, D affects Y, but Z does not directly affect Y") +
+  labs(title = "Instrumental Variables: Z causes D, D causes Y, but Z does not directly cause Y") +
   theme(plot.title = element_text(hjust = 0.5, size = 12))
 ```
 
-An instrumental variable (or just an instrument) is a variable that is exogenous/random and has a causal effect on the treatment variable. Conceptually, it is a random "push" to accept the treatment.
+An instrumental variable (or just an instrument) is a variable that is exogenous/random and has a causal effect on the treatment variable. Conceptually, it is a random "push" to accept the treatment
+
+. . . 
 
 Under some assumptions, we can estimate an average causal effect by "instrumenting" the endgenous treatment with the exogenous instrumental variable
 
-We say that we "instrument" the treatment variable with the instrumental variable. 
+
+
+## Instrumental variables
+
+If we believe that the "endogeneity" of treatment is due to unobserved variables, control is insufficient (we lack the control variables). An [instrumental variable]{.alert} can solve this problem
+
+```{r}
+#| echo: false
+#| fig-width: 6
+#| fig-height: 3
+#| out-height: "400px"    
+#| out-width: "auto"      
+#| 
+library(ggdag)
+library(ggplot2)
+
+# Create an IV DAG
+dag_iv <- dagify(
+  y ~ D + C,
+  D ~ Z + C,
+  coords = list(x = c(Z = 1, C = 2.5, D = 2, y = 4),
+                y = c(Z = 2, C = 3, D = 1, y = 1))
+)
+
+ggdag(dag_iv) +
+  theme_dag_blank() +
+  labs(title = "Instrumental Variables: Z causes D, D causes Y, but Z does not directly cause Y") +
+  theme(plot.title = element_text(hjust = 0.5, size = 12))
+```
+
+
 
 $$\underbrace{D}_{\text{endogenous treatment}} = \delta + \theta \underbrace{Z}_{\text{instrument}} + \phi X + u \quad \text{(First stage)}$$
 
 $$y = \alpha + \beta \underbrace{D}_{\text{endogenous treatment}} + \gamma X + \varepsilon \quad \text{(Second stage)}$$
 
+. . . 
 
 The statistical model estimates the first equation (first stage), then predicts the values of $D$ and replaces the observed values of $D$ in the second equation (second stage) with the predicted values.
 
@@ -387,8 +705,29 @@ This is equivalent to "controlling" for the endogenous part of the treatment $D$
 
 Examples of IV designs
 
-[insert DAG + example]
+```{r}
+#| echo: false
+#| fig-width: 6
+#| fig-height: 3
+#| out-height: "400px"    
+#| out-width: "auto"      
+#| 
+library(ggdag)
+library(ggplot2)
 
+# Create an IV DAG
+dag_iv <- dagify(
+  y ~ D + C,
+  D ~ Z + C,
+  coords = list(x = c(Z = 1, C = 2.5, D = 2, y = 4),
+                y = c(Z = 2, C = 3, D = 1, y = 1))
+)
+
+ggdag(dag_iv) +
+  theme_dag_blank() +
+  labs(title = "Instrumental Variables: Z causes D, D causes Y, but Z does not directly cause Y") +
+  theme(plot.title = element_text(hjust = 0.5, size = 12))
+```
 
 ::: {.panel-tabset}
 
@@ -425,24 +764,26 @@ Examples of IV designs
 
 IV design requires assumptions. The ones that are relevant for us at this stage are:
 
-[include figure of the DAG?]
 
 - The instrument is random (or random after controlling for covariates)
 - The instrument has an effect on the treatment
-- The instrument has an effect on the outcome <u>only through the treatment</u>. This is called the Exclusion restriction
+- The instrument has an effect on the outcome <u>only through the treatment</u>. This is called the [Exclusion restriction]{.alert}
+
+. . . 
 
 There are other assumptions which are more technical, we will not go through them. You find the discussion in Keele's reading for today.
 
-These assumptions are quite strong. We will see some examples next class.
 
 ## Other research designs: DID and RDD
+
+For reference. We will go back to them if needed.
 
 ```{r, fig.show = 'hold', out.width = '100%'}
 #| #label: fig-mpg
 #| #fig-cap: "Empirical strategies"
 #| fig-subcap:
 #|   - "Difference-in-Differences"
-#|   - "Geographic Regression Discontinuity"
+#|   - "Regression Discontinuity"
 #| layout-ncol: 2
 #| # column: page
 
@@ -526,7 +867,7 @@ p <- ggplot(data, aes(x = x, y = y, color = group)) +
   scale_color_manual(values = c("Control" = control_color, "Treated" = treatment_color)) + 
   labs(
     title = ")",
-    x = "Distance to the border",
+    x = "Distance to the cutoff",
     y = "Outcome",
     color = "Group"
   ) +
@@ -547,16 +888,18 @@ p +
 
 ```
 
-## Roadmap
-- what is causality
-- counterfactuals: the fundamental problem of causal inference
-- causal inference and assumptions
-- confounding
-- causal research design/identification strategy
-    - randomized experiments (and survey experiment)
-    - natural experiments: selection on observables
-    - instrumental variables
-- how to read a regression table (with examples from each technique)
+**Difference-in-Differences**
 
-- question: is causal inference more challenging when the units are countries?
-- activity: Acemoglu et al (2001)
+- The treated group is treated at some point in time
+- We observe the treated and control group before and after the treated group receives the treatment
+- For each group, we subtract the outcome after treatment to the outcome before treatment (first difference). The we subtract the first difference of the control group from the first difference of the treated group (diff-in-diff)
+
+. . . 
+
+**Regression Discontinuity**
+
+- Treatment is given according to the value of some variable
+- Only units with a value above/below a given cutoff point receive treatment
+- We compare only units very close to the cutoff point to approximate a randomized experiment
+
+

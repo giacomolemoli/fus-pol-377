@@ -1,6 +1,6 @@
 ---
 title: "International Political Economy"
-subtitle: "Lecture 2: Institutions and International Cooperation"
+subtitle: "Lecture 2: Rationality and Institutions"
 date: "2026-01-23"
 ---
 
@@ -26,7 +26,7 @@ Recall the ingredients of RC
 
 . . . 
 
-This structure of postulates means that the distinctive feature of social coexistence is the conflict of interests (arising from the heterogeneity of motives, beliefs, and constraints)
+This structure of postulates suggests that the distinctive feature of social coexistence is the conflict of interests (arising from the heterogeneity of motives, beliefs, and constraints)
 
 . . . 
 
@@ -48,15 +48,15 @@ The clash between individual and collective goals gives rise to [social dilemmas
 
 Why do they arise?
 
-The key problem is that individuals pursue their goals, but in an inter-connected world one's actions impact the welfare of others. We say they have **externalities**.
+The key problem is that individuals pursue their goals, but in an inter-connected world one's actions impact the welfare of others. We say they have [externalities]{.alert}
 
 . . . 
 
-As a consequence, others will adjust their choices to do the best thing in theri interest *given* what your choices impose on them. We say there is [strategic interdependence]{.alert}
+As a consequence, others will adjust their choices to do the best thing in their interest *given* the effect of your choices on them. We say there is [strategic interdependence]{.alert}
 
 . . . 
 
-We have cooperation when several decision-makers depart from the best course of individual action to "do the right thing"
+We have cooperation when several decision-makers depart from their best course of action to "do the right thing"
 
 
 # Cooperation {.section}
@@ -180,7 +180,7 @@ What's the problem?
 
 . . . 
 
-Since the group is large, an individual's action is not decisive for the outcome. Yet, the personal cost is substantial. It is better to stay home and wait for the others to overturn the regime. We say this is the [free rider problem]{.alert}
+Since the group is large, an individual's action is not decisive for the outcome. Yet, the personal cost is substantial. It is better to stay home and wait for the others to overturn the regime. This is the [free rider problem]{.alert}
 
 
 # Institutional solutions {.section}

@@ -1,6 +1,6 @@
 ---
 title: "International Political Economy"
-subtitle: "Lecture 4: Review of Causal Inference"
+subtitle: "Lecture 4: Causal Inference Review"
 date: "2026-02-03"
 ---
 

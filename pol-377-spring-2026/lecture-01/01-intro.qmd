@@ -1,6 +1,6 @@
 ---
 title: "International Political Economy"
-subtitle: "Lecture 1: Introduction"
+subtitle: "Lecture 1: What is International Political Economy?"
 date: "2026-01-20"
 ---
 
@@ -20,22 +20,33 @@ Who I am:
 
 . . . 
 
-What I look for in this class:
-
-- I want you to learn about IPE 
-
-- I want to communicate with you as much as possible during the course
-    - This is an interactive course, you will be doing much of the job anyway
-    - Meet me during the week: clarify doubts, ask questions, discuss progress
-    - I am also interested in continued feedback from you about the course
-
-. . . 
-
 How to reach me:
 
 - Office: LAC 8
 - Office hours: Tuesdays and Fridays before class, 12.30pm-2.30pm
 - Email
+
+## Our goals
+
+In this course, the goal is that you
+
+- Learn about current topics and debates in IPE
+
+- "Think as a social scientist" when interpreting news and events: critically and with analytical rigor
+
+- Draw lessons from history 
+
+. . . 
+
+To do so, I want us to communicate as much as possible during the course
+
+- This is an interactive course and you will do most of the job in class
+
+- Use office hours to clarify doubts, ask questions, discuss progress
+
+- I am also interested in continued feedback from you about the course
+
+
 
 
 ## About you
@@ -49,22 +60,24 @@ I want you to tell everyone, in a few words:
 
 # Course overview {.section}
 
-## This class
+## What is IPE about?
 
 International Political Economy (IPE): the study of interactions between economics and politics in the world economy
 
-There are different levels of analysis
+This definition encompasses different levels of analysis:
 
-1. <u>Relations between states</u> (states as "autonomous" agents): international institutions, treaties, organizations
+1. <u>Relations between states</u>: states are "autonomous" agents that interact with others
+
+    - e.g., take part in international institutions, trade, sign treaties
 
 2. <u>Domestic sources of international politics</u>: what drives states' posture in relations between states 
-    - e.g., accountability and representation of domestic voters and special interests
+    - e.g., accountability to, and representation of, domestic voters and special interests
 
-3. <u>International sources of domestic politics</u>: the reverberations of international events or shocks into domestic societies and electorates 
-    - e.g., unequal costs and benefits for different social groups
+3. <u>International sources of domestic politics</u>: the repercussions of international events or trends in domestic societies and electorates 
+    - e.g., economic transformations, political changes
 
 
-## Our approach 
+## Our approach in this course
 
 IPE is a subfield at the intersection of political science and economics. We will look at the world through the glasses of analytical (quantitative) political science
 
@@ -74,25 +87,39 @@ IPE is a subfield at the intersection of political science and economics. We wil
 
 - In short: people, politicians, governments, states... (*actors*) have goals and motivations and behave (*act*) according to them. In order to understand their behavior we need to start from what drives them
 
-- The goal is to arrive at understanding of facts that is generalizable across space and time
+- The goal is to generate knowledge of facts that is generalizable across space and time
 
 . . . 
 
 Important: mathematical or statistical training is neither necessary nor required for this class. Our focus is on understanding and applying concepts
 
+
 ## Requirements
 
 The final grade is based on
 
-- Midterm exam 
-- Group paper presentation (2 sessions throughout the course)
-- Individual research design (at the end of the course)
-- Class participation
 
-. . . 
+|  Assignment   | Date due    |  Midterm weight   |   Final weight  |
+|-----|-----|-----|-----|
+|  Paper presentation and discussion (in groups of 3)   |  Presentation dates: February 17, April 14   |   0%  |   20%  |
+|  Midterm exam   |  March 3   |  60%   |  20%   |
+|  Research design (individual) |  Due on Moodle by April 24. Short class presentations on April 28, May 1   |   0%  |   40%  |
+|   Class participation  |  Ongoing   |  40%   |  20%   |
 
-We incorporate in the course activities with external speakers @ Franklin
 
+See the syllabus for instructions on the group presentation and the research design
+
+You as a group will coordinate to form groups for the paper presentation and fill the group document with your names by the first week of the course
+
+
+Franklin events with external speakers @ Franklin relevant for the course are part of the syllabus
+
+
+## Class materials
+
+- Articles: Digital copies posted on Moodle
+- Book chapters: Digital or hard copies available in Grace Library
+- Slides:  posted on Moodle and available also on [GitHub](https://github.com/giacomolemoli/fus-pol-377)
 
 ## AI policy
 
@@ -105,9 +132,9 @@ By the University's policy:
 
 More generally, you must reflect on the difference between using AI to help [you]{.alert} learn and allow [your]{.alert} your unique skills to emerge **and** using AI to pretend you have learned
 
+# Questions? {.section}
 
-
-# Views of IPE {.section}
+# Approaches to IPE {.section}
 
 ## What is IPE
 
@@ -190,7 +217,7 @@ More generally, you must reflect on the difference between using AI to help [you
 
 
 
-## Institutionalism
+## (New) Institutionalism
 
 ::::{.columns}
 ::: {.column .center}
@@ -207,7 +234,7 @@ More generally, you must reflect on the difference between using AI to help [you
 
 - They create **institutions** (codified "rules of the game") to enforce cooperation for mutual benefit
 
-- Economics and politics interact thanks to the incentives and **rational choices** of states
+- Economics and politics interact through the incentives and rational choices of states
 
 - Absence of conflict (cooperation) is not natural, but can be achieved
 
@@ -216,13 +243,13 @@ More generally, you must reflect on the difference between using AI to help [you
 
 ## The rational choice approach
 
-All traditional theories provide important, sometimes crucial, insights. Our approach will be to use the prevailing methodological framework in contemporary political science (and the defining methodological framework of economics): [rational choice]{.alert}
+All traditional theories provide important, sometimes crucial, insights. In contemporary political science, the prevailing methodological framework (and the defining methodological framework of economics) is [rational choice]{.alert}
 
-[Institutionalist theory is an example of rational choice]{.remark}
+[New Institutionalist theory is an example of rational choice theory]{.remark}
 
 . . . 
 
-There are several advantages. We can incorporate some key insights of traditional theories incorporated
+There are several advantages. We can incorporate some key insights of traditional theories
 
 - Self-interest
 - Conflicts of interest
@@ -249,12 +276,17 @@ Of course we generally don't know preferences or beliefs of others. We use *assu
 
 Methodological individualism does **not** mean that we believe all people are selfish in a caricatural sense or have only material motivations.
 
-[For instance, we will see that it is difficult to understand the backlash against globalization without non-material concepts such as group, dignity, community, culture]{.remark}
+[We will see that it is difficult to understand the backlash against globalization without non-material concepts such as pride, dignity, community, culture]{.remark}
 
 Incorporating these concepts into rational choice is challenging, but many people (including the DIVIDE team) work on that all the time
 
+The advantage of RC is to allow us to examine *what* assumptions fail in the model and to work to improve them
+
 
 ## Actors and relations in IPE
+
+Recall the different "levels" of analysis. We can now give them a structure in terms of actors and relations
+
 
 ::::{.columns}
 ::: {.column width="60%"}
@@ -326,13 +358,16 @@ Incorporating these concepts into rational choice is challenging, but many peopl
 :::
 ::: {.column width="40%"}
 
-We often need to "aggregate" up to the level of states or governments to understand IPE phenomena
 
-Treating states as unitary actors in a model is equivalent to assuming that who runs the state has full mandate on international issues (or that only its preferences matter)
+- We often want to "aggregate" up to the level of states or governments to study macro-phenomena
 
-This may be justified or not, depending on the specific theory and phenomenon we want to explain
+- Is it correct? It depends
 
-The RC approach helps us understand and evaluate constraints of high-level actors and the consequences of their actions
+- Treating states as unitary actors in a model is equivalent to assuming that who runs the state has full mandate on international issues (or that only their preferences matter)
+
+- Whether this is justified or not depends on the specific theory 
+
+- The RC approach helps us understand and evaluate constraints of high-level actors and the consequences of their actions
 
 :::
 ::::
