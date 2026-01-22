@@ -41,8 +41,8 @@ Does individual egoism hinder our ability to work together for the common good?
 
 The clash between individual and collective goals gives rise to [social dilemmas]{.alert}
 
-- Social $\rightarrow$ arise from the interaction of individuals with conflicting interests
-- Dilemma $\rightarrow$ egoism can lead to sub-optimal outcome for everyone
+- Social $\rightarrow$ arises from the interaction of self-interested individuals
+- Dilemma $\rightarrow$ self interest can lead to a sub-optimal outcome for everyone
 
 . . . 
 
@@ -68,9 +68,6 @@ The most famous illustration of a social dilemma
 - Two prisoners are arrested and held in separate cells
 - They are interrogated separately and cannot comunicate
 - Each must choose to either Cooperate (= stay silent) or Defect (= confess)
-- If none of them confesses, they get a light sentence
-- If one confesses and the other not, the snitcher is free and the other gets a harsh sentence
-- If both confess, they get a normal sentence
 
 . . . 
 
@@ -82,6 +79,11 @@ The most famous illustration of a social dilemma
 
 *Payoffs: Years in jail (Player 1, Player 2)*
 
+- If none of them confesses, they get a light sentence
+- If one confesses and the other not, the snitcher is free and the other gets a harsh sentence
+- If both confess, they get a normal sentence
+
+. . . 
 
 What do they do?
 
@@ -191,11 +193,11 @@ There are several views and definitions of institutions in the social sciences. 
 
 . . . 
 
-Institutions "correct" the incentives towards self-interest and coordinate behavior (state policy) with that of the others
+Institutions can "correct" the incentives towards self-interest and coordinate behavior (e.g., state policy) with that of the others
 
 . . .
 
-In this sense, we can create "institutional solutions" to social dilemmas
+Some institutions are designed to provide "solutions" to social dilemmas
 
 
 ## Institutional solutions for cooperation 
@@ -214,7 +216,7 @@ How can we make (Cooperate; Cooperate) the rational equilibrium outcome in this 
 
 Some possible solutions
 
-- **Change the payoffs**. A criminal group punishes snitchers harshly and from prison sentences can identify the defector.
+- **Change the payoffs**. A criminal group punishes snitches harshly and from prison sentences can identify the defector.
     - This lowers the payoff of Defect until it is no longer individually rational
 
 - **Change the time horizon**. If the game is repeated many times, prisoners can commit to always cooperate as long as the other cooperates
@@ -242,7 +244,7 @@ Similar types of institutional solutions for collective action problems have bee
 
 - **Small groups**. In small groups, free-riding is less likely because individual effort has greater impact on the final outcome and is more observable
     - Many international organizations have (relatively) few members
-    - Is it better to do the group work in 3 or in 30?
+    - Is it better to do a group assignment in 3 or in 30?
 
 - **Private benefits**. Private benefits that are conditional on contribution increase individual effort
     - Health insurance for members of professional associations
@@ -256,21 +258,6 @@ Similar types of institutional solutions for collective action problems have bee
 ![](img/olson.jpg)
 :::
 ::::
-
-
-## Limitations of the approach
-
-This approach to international institutions provides many insights on why certain institutions can promote cooperation and collective action relative to their absence
-
-However, it is important to note some limitations of the approach
-
-- "What is the effect of an institution" is a different *theoretical* question than "Why was this institution created as opposed to a different one"
-    - Empirically speaking, we will see that the first question presupposes the second. But for now, we focus on the theory
-- International institutions in reality are extremely complex and have many layers. This exposition oversimplifies them
-    - There is a reason: isolate their effect on collective behavior through channels based on rational incentives
-    - But we are abstracting from their inner working, their organizational aspects, the internal incentives that bureaucrats face, etc.
-    - For many relevant problems we may want to consider these incentives 
-- We are not considering domestic politics
 
 
 ## Institutional solutions
@@ -306,3 +293,25 @@ Sanctions to a foreign state
 | Multiple countries | Cooperate = Join sanctions; Defect = Continue trade | Each country prefers others to bear the cost of sanctions while maintaining own profitable trade relationships | 
 
 :::
+
+
+
+## Limitations of the approach
+
+This approach to international institutions provides many insights on why certain institutions can promote cooperation and collective action relative to their absence
+
+However, it is important to note some limitations of the approach
+
+- "What is the effect of an institution" is a different *theoretical* question than "Why was this specific institution created as opposed to a different one"
+    - Empirically speaking, we will next week that the first question presupposes the second. But for now, we are theorists
+- International institutions in reality are extremely complex and have many layers. This exposition oversimplifies them
+    - There is a reason: isolate their effect on collective behavior through channels based on rational incentives
+    - But we are abstracting from their inner working, their organizational aspects, the internal incentives that bureaucrats face, etc.
+    - For many relevant problems we may want to consider these incentives 
+- We are not considering domestic politics
+
+
+## Next
+
+- Introduction to causal inference
+- Causal research design
