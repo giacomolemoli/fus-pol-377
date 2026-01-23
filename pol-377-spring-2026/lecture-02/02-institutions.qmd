@@ -80,7 +80,7 @@ The most famous illustration of a social dilemma
 *Payoffs: Years in jail (Player 1, Player 2)*
 
 - If none of them confesses, they get a light sentence
-- If one confesses and the other not, the snitcher is free and the other gets a harsh sentence
+- If one confesses and the other not, the snitch is free and the other gets a harsh sentence
 - If both confess, they get a normal sentence
 
 . . . 
