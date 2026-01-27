@@ -1266,7 +1266,7 @@ margin-right: 0; }
 </div>
 <div class="fragment">
 <p>In causal inference, we mostly focus on the <strong>ATE</strong> (average treatment effect).</p>
-<p>In papers, people sometimes refer to the <span class="hover-note" data-tooltip="Average **T**reatment effect on the Treated. This is the average effect for the treated units only, rather than the average effect for all units.">ATT</span> or the <span class="hover-note" data-tooltip="Local Average Treatment Effect. This indicates an average effect for some subgroup of units. What subgroup we are talking about depends on the method. Typically, we encounter this term in Instrumental Variables designs, which identify average effects for a specific subgroup of units.">LATE</span>. For this class, just know that they refer to averages of causal effects in the sample of units <span class="hover-note" data-tooltip="If you are interested in the differences, see The Effect, Ch.10 https://theeffectbook.net/ch-TreatmentEffects.html">(note)</span>.</p>
+<p>In papers, people sometimes refer to the <span class="hover-note" data-tooltip="Average Treatment effect on the Treated. This is the average effect for the treated units only, rather than the average effect for all units.">ATT</span> or the <span class="hover-note" data-tooltip="Local Average Treatment Effect. This indicates an average effect for some subgroup of units. What subgroup we are talking about depends on the method. Typically, we encounter this term in Instrumental Variables designs, which identify average effects for a specific subgroup of units.">LATE</span>. For this class, just know that they refer to averages of causal effects in the sample of units <span class="hover-note" data-tooltip="If you are interested in the differences, see The Effect, Ch.10 https://theeffectbook.net/ch-TreatmentEffects.html">(note)</span>.</p>
 </div>
 </section>
 <section id="estimate-an-effect-under-random-assignment" class="slide level2">
@@ -1285,7 +1285,7 @@ margin-right: 0; }
 <p><span class="math inline">\(y = \alpha + \beta D + \varepsilon\)</span></p>
 <ul>
 <li class="fragment"><span class="math inline">\(y\)</span> is the development outcome</li>
-<li class="fragment"><span class="math inline">\(D\)</span> is the variable that indicates a project was implemented (1 if yes, 0 if no)</li>
+<li class="fragment"><span class="math inline">\(D\)</span> is the variable that indicates whether a project was implemented (1 if yes, 0 if no)</li>
 <li class="fragment"><span class="math inline">\(\beta\)</span> is the <span class="hover-note" data-tooltip="We could also compute the average of y in the treated group, the average of y in the control group, subtract the two, and obtain the ATE. Mathematically, the difference between the two means and the regression coefficient are identical.">ATE</span></li>
 </ul>
 </section>
@@ -1324,11 +1324,11 @@ margin-right: 0; }
 <p>If we simply compare treated and non-treated districts as before, and run <span class="math inline">\(y=\alpha + \beta D + \varepsilon\)</span>, our <span class="math inline">\(\beta\)</span> will be <span class="math display">\[\beta= \underbrace{\text{ATE}}_{\text{causal effect}} + \underbrace{\text{pre-existing income differences}}_{\text{bias}}\]</span></p>
 </div>
 <div class="fragment">
-<p>Intuition: if two things change at the same time, we are not sure which one was the cause</p>
-</div>
-<div class="fragment">
 <p>We call this a problem of <span class="hover-note" data-tooltip="Selection in this case means &#39;selection into treatment&#39;, that is units choose to be treated, or are chosen to be treated, for non-random reasons."><em>selection</em></span> or <span class="hover-note" data-tooltip="Endogeneity means that the treatment assignment depends on some characteristics of the units (it is &#39;endogenous&#39; to the units themselves). Its contrary, Exogeneity, means that the treatment is independent of the unit characteristics, or random."><em>endogeneity</em></span> or <span class="hover-note" data-tooltip="Meaning that if we ignore the income variable, it will confound our estimate of the ATE."><em>confounding</em></span> or <span class="hover-note" data-tooltip="Income is the variable that gives us problems if omitted."><em>omitted variable</em></span>.</p>
-<p>This is what we mean when we say that <u>correlation is not causation</u></p>
+<ul>
+<li class="fragment">Intuition 1: if two things change at the same time, we are not sure which one was the cause</li>
+<li class="fragment">Intuition 2: this is what we mean when we say that <u>correlation is not causation</u></li>
+</ul>
 </div>
 </section>
 <section id="estimate-an-effect-under-endogeneity-1" class="slide level2">
@@ -1357,8 +1357,14 @@ margin-right: 0; }
 </div>
 </div>
 <ul>
-<li class="fragment">Common cause: some other variable is causing both the treatment and the outcome</li>
-<li class="fragment">Reverse causality: the outcome causes the treatment and not vice-versa</li>
+<li class="fragment">Common cause: some other variable is causing both the treatment and the outcome
+<ul>
+<li class="fragment">Example?</li>
+</ul></li>
+<li class="fragment">Reverse causality: the outcome causes the treatment and not vice-versa
+<ul>
+<li class="fragment">Example?</li>
+</ul></li>
 </ul>
 </section>
 <section id="causal-research-design" class="slide level2">
@@ -1430,16 +1436,12 @@ margin-right: 0; }
 </div>
 </div>
 </div>
-<p>This is analogous to running little experiments between units with the same values of the variables, and taking the average of the effects from these experiments.</p>
+<p>This is analogous to running little experiments between units with the same values of the confounding variables, and taking the average of the effects from these experiments.</p>
 <div class="fragment">
 <p>Different ways to do it:</p>
-<ul>
-<li class="fragment"><u>Linear regression</u>. The confounding variables are included in the regression as independent variables.</li>
-</ul>
+<p><strong>Linear regression</strong>. The confounding variables are included in the regression as independent variables.</p>
 <p><span class="math inline">\(y = \alpha + \beta D + \gamma \text{(control variables)} + \varepsilon\)</span></p>
-<ul>
-<li class="fragment"><u>Matching</u>. Other techniques to compare “more similar” units, following a similar logic to “controlling”. We will not go into the details in this class. If you find them, just know that they are similar to controlling.</li>
-</ul>
+<p><strong>Matching</strong>. Other techniques to compare “more similar” units, following a similar logic to “controlling”. We will not go into the details in this class. If you find them, just know that they are similar to controlling.</p>
 </div>
 </section>
 <section id="instrumental-variables" class="slide level2">
@@ -1456,7 +1458,7 @@ margin-right: 0; }
 </div>
 <p>An instrumental variable (or just an instrument) is a variable that is exogenous/random and has a causal effect on the treatment variable. Conceptually, it is a random “push” to accept the treatment</p>
 <div class="fragment">
-<p>Under some assumptions, we can estimate an average causal effect by “instrumenting” the endgenous treatment with the exogenous instrumental variable</p>
+<p>Under some assumptions, we can estimate an average causal effect by “instrumenting” the endogenous treatment with the exogenous instrumental variable</p>
 </div>
 </section>
 <section id="instrumental-variables-1" class="slide level2">
@@ -1475,7 +1477,7 @@ margin-right: 0; }
 <p><span class="math display">\[y = \alpha + \beta \underbrace{D}_{\text{endogenous treatment}} + \gamma X + \varepsilon \quad \text{(Second stage)}\]</span></p>
 <div class="fragment">
 <p>The statistical model estimates the first equation (first stage), then predicts the values of <span class="math inline">\(D\)</span> and replaces the observed values of <span class="math inline">\(D\)</span> in the second equation (second stage) with the predicted values.</p>
-<p>This is equivalent to “controlling” for the endogenous part of the treatment <span class="math inline">\(D\)</span> and using only the exogenous part of the treatment to estimate the ATE.</p>
+<p>This is equivalent to controlling for the “endogenous part” of the treatment <span class="math inline">\(D\)</span> and using only the “exogenous part” of the treatment to estimate the ATE.</p>
 </div>
 </section>
 <section id="instrumental-variables-2" class="slide level2">
@@ -1614,7 +1616,7 @@ margin-right: 0; }
 </section>
 <section id="other-research-designs-did-and-rdd" class="slide level2">
 <h2>Other research designs: DID and RDD</h2>
-<p>For reference. We will go back to them if needed.</p>
+<p>Read this slide if you are interested. We will go through these other methods later in the course if needed.</p>
 <div class="cell quarto-layout-panel" data-layout-ncol="2">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">

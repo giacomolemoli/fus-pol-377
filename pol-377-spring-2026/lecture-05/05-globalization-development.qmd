@@ -1,0 +1,192 @@
+---
+title: "International Political Economy"
+subtitle: "Lecture 5: Globalization and Development"
+date: "2026-02-06"
+---
+
+
+## Today
+
+- Globalization and trade integration
+- Institutions for free trade: GATT/WTO
+- Did institutions increase trade flows?
+- What are the consequences of trade integration (economic and political)?
+
+# Globalization {.section}
+
+## What is globalization?
+
+What do you think of when you think of "globalization"?
+
+. . . 
+
+> Globalization is the process of increasing interdependence and integration among the economies, markets, societies, and cultures of different countries worldwide. This is made possible by the reduction of barriers to international trade, the liberalization of capital movements, the development of transportation, and the advancement of information and communication technologies
+>
+> [Wikipedia](https://en.wikipedia.org/wiki/Globalization)
+
+
+## What is globalization?
+
+Globalization is a complex phenomenon which involves the exchange of goods, services, information, technology, and people
+
+. . . 
+
+Many of these components have a dedicated module
+
+In this module, we will focus on the [trade]{.alert} component of globalization
+
+# Globalization and Trade {.section}
+
+## Globalization and trade
+
+![Growth of global trade](img/trade-owid.png)
+
+## Globalization and trade
+
+![Waves of globalization](img/glob-waves-owid.png)
+
+## Globalization and trade
+
+![Bilateral trade](img/bilateral-trade-owid.png)
+
+
+## Geography and trade
+
+![Distance and trade](img/distance-trade-owid.png)
+
+## Geography and trade
+
+![Distance and trade](img/France_Trade_Borders_2010.jpg)
+
+## Geography and trade
+
+Not just physical geography, but how "fast to reach" a country is
+
+[Pascali (2017)](https://pubs.aeaweb.org/doi/pdfplus/10.1257/aer.20140832) shows that the first wave of globalization (1870-1913) was facilitated by the introduction of steam engines
+
+They drastically reduced shipping times for merchant ships, which previously could only rely on wind
+
+. . . 
+
+Studies that try to do causal inference on trade use some exogenous factor (related to geography) that reduces trade costs between two countries
+
+For instance: distance, or changes in travel times as determined by changes in transport technology
+
+
+## Globalization and trade
+
+**Class activity**
+
+- Work in pairs with your neighbor
+- Go to [https://ourworldindata.org/trade-and-globalization#trade-partnerships](https://ourworldindata.org/trade-and-globalization#trade-partnerships)
+- Look at the plots in this section and answer: How did the flows of trade between rich and poor countries change over time since the early 1800s?
+
+## The rise of China in the world economy
+
+![China's trade partners](img/china-partners-owid.png)
+
+## The rise of China in the world economy
+
+**Class activity**
+
+- Work in pairs with your neighbor
+- Go to [https://ourworldindata.org/trade-and-globalization#trade-partnerships](https://ourworldindata.org/trade-and-globalization#trade-partnerships)
+- Look at the plots in this section and answer: How did the share of imports from China evolve over time for the US and Europe?
+
+
+## The rise of China in the world economy
+
+![Chinese import penetration in the US](img/china_shock.png)
+
+Source: Autor, Dorn, Hanson (2013)
+
+
+# Institutions for Free Trade: GATT/WTO {.section}
+<!--
+## General Agreement on Tariffs and Trade
+
+- Features that should improve trade
+- Most Favored Nation clause etc
+- Social dilemmas that should be solved by GATT
+
+## World Trade Organization
+
+TBA
+-->
+
+## Did the GATT/WTO increase free trade?
+
+Goldstein, Rivers, and Tomz (2007) study the effects of GATT/WTO on trade between countries
+
+. . . 
+
+Recap of the study:
+
+- What is the motivation for their study? Is there a gap or puzzle they want to address?
+- What is their argument regarding the effect of GATT/WTO?
+- What is their research design?
+- What are the units of analysis?
+
+## Did the GATT/WTO increase free trade?
+
+![From Goldstein et al (2007)](img/goldstein-et-al-tab3.png)
+
+## Did the GATT/WTO increase free trade?
+
+Do you think this study has broader implications for understanding the effects of institutions?
+
+# The Effects of Trade {.section}
+
+## Economic effects of trade
+
+What do you think are the effects of trade on:
+
+- Growth?
+- Inequality?
+
+## Economic effects of trade
+
+![From Pascali (2017)](img/pascali-tab8.png)
+
+## Trade and democracy
+
+![Democracies over time](img/democracies-owid.png)
+
+Source: [Our World in Data](https://ourworldindata.org/democracy) and [V-Dem](https://www.v-dem.net/)
+
+
+## Does trade integration lead to the spread of democracy?
+
+Tabellini and Magistretti (2025) study this question
+
+
+- What is their research question?
+- What is the **logic** of their design? What is the "treatment"? What is the "instrument"?
+- What are the **mechanisms** that they suggest for the result and the ones they say they rule out?
+- What are the identification assumptions? Do you find them plausible?
+
+## Class activity
+
+What can be the negative consequences of globalization (trade integration) on the economy? And on democracy?
+
+## Next
+
+- Understanding reactions to globalization: winners and losers
+- The backlash against globalization today
+- The rise of the radical right in Western democracies
+
+<!--
+## Structure
+
+- brief history of the GATT/WTO
+- key features: MFN clause
+- features that should improve trade (for class)
+- Social dilemmas that should be solved by GATT (for class)
+- effects of GATT/WTO: discussion of Goldstein et al paper
+- challenges to estimating the effects of trade (for class)
+- implications for causal inference
+- effects of trade on democracy: discussion of Magistretti and Tabellini
+- theoretical channels for effects of trade on democracy/autocracy (for class)
+- is their estimation credible? what is the instrument, what are the id assumptions? (for class)
+- what are possible negative effects of free trade?
+-->

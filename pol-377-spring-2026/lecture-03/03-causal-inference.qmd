@@ -328,7 +328,7 @@ In causal inference, we mostly focus on the **ATE** (average treatment effect).
 
 
 
-In papers, people sometimes refer to the [ATT]{.hover-note data-tooltip="Average **T**reatment effect on the Treated. This is the average effect for the treated units only, rather than the average effect for all units."} or the [LATE]{.hover-note data-tooltip="Local Average Treatment Effect. This indicates an average effect for some subgroup of units. What subgroup we are talking about depends on the method. Typically, we encounter this term in Instrumental Variables designs, which identify average effects for a specific subgroup of units."}. For this class, just know that they refer to averages of causal effects in the sample of units [(note)]{.hover-note data-tooltip="If you are interested in the differences, see The Effect, Ch.10 https://theeffectbook.net/ch-TreatmentEffects.html"}.
+In papers, people sometimes refer to the [ATT]{.hover-note data-tooltip="Average Treatment effect on the Treated. This is the average effect for the treated units only, rather than the average effect for all units."} or the [LATE]{.hover-note data-tooltip="Local Average Treatment Effect. This indicates an average effect for some subgroup of units. What subgroup we are talking about depends on the method. Typically, we encounter this term in Instrumental Variables designs, which identify average effects for a specific subgroup of units."}. For this class, just know that they refer to averages of causal effects in the sample of units [(note)]{.hover-note data-tooltip="If you are interested in the differences, see The Effect, Ch.10 https://theeffectbook.net/ch-TreatmentEffects.html"}.
 
 
 
@@ -366,7 +366,7 @@ We can do this with a *linear regression*.
 $y = \alpha + \beta D + \varepsilon$
 
 - $y$ is the development outcome
-- $D$ is the variable that indicates a project was implemented (1 if yes, 0 if no)
+- $D$ is the variable that indicates whether a project was implemented (1 if yes, 0 if no)
 - $\beta$ is the [ATE]{.hover-note data-tooltip="We could also compute the average of y in the treated group, the average of y in the control group, subtract the two, and obtain the ATE. Mathematically, the difference between the two means and the regression coefficient are identical."}
 
 
@@ -433,13 +433,10 @@ $$\beta= \underbrace{\text{ATE}}_{\text{causal effect}} + \underbrace{\text{pre-
 
 . . . 
 
-Intuition: if two things change at the same time, we are not sure which one was the cause
-
-. . . 
-
 We call this a problem of [*selection*]{.hover-note data-tooltip="Selection in this case means 'selection into treatment', that is units choose to be treated, or are chosen to be treated, for non-random reasons."} or [*endogeneity*]{.hover-note data-tooltip="Endogeneity means that the treatment assignment depends on some characteristics of the units (it is 'endogenous' to the units themselves). Its contrary, Exogeneity, means that the treatment is independent of the unit characteristics, or random."} or [*confounding*]{.hover-note data-tooltip="Meaning that if we ignore the income variable, it will confound our estimate of the ATE."} or [*omitted variable*]{.hover-note data-tooltip="Income is the variable that gives us problems if omitted."}.
 
-This is what we mean when we say that <u>correlation is not causation</u>
+- Intuition 1: if two things change at the same time, we are not sure which one was the cause
+- Intuition 2: this is what we mean when we say that <u>correlation is not causation</u>
 
 ## Estimate an effect under endogeneity
 
@@ -519,7 +516,9 @@ plot1 | plot2
 
 
 - Common cause: some other variable is causing both the treatment and the outcome
+  - Example?
 - Reverse causality: the outcome causes the treatment and not vice-versa
+  - Example?
 
 ## Causal research design
 
@@ -610,17 +609,17 @@ ggdag(dag_confounded, node_size = 20) +
   theme(plot.title = element_text(hjust = 0.5))
 ```
 
-This is analogous to running little experiments between units with the same values of the variables, and taking the average of the effects from these experiments.
+This is analogous to running little experiments between units with the same values of the confounding variables, and taking the average of the effects from these experiments.
 
 . . . 
 
 Different ways to do it:
 
-- <u>Linear regression</u>. The confounding variables are included in the regression as independent variables.
+**Linear regression**. The confounding variables are included in the regression as independent variables.
 
 $y = \alpha + \beta D + \gamma \text{(control variables)} + \varepsilon$
 
-- <u>Matching</u>. Other techniques to compare "more similar" units, following a similar logic to "controlling". We will not go into the details in this class. If you find them, just know that they are similar to controlling.
+**Matching**. Other techniques to compare "more similar" units, following a similar logic to "controlling". We will not go into the details in this class. If you find them, just know that they are similar to controlling.
 
 
 ## Instrumental variables
@@ -655,7 +654,7 @@ An instrumental variable (or just an instrument) is a variable that is exogenous
 
 . . . 
 
-Under some assumptions, we can estimate an average causal effect by "instrumenting" the endgenous treatment with the exogenous instrumental variable
+Under some assumptions, we can estimate an average causal effect by "instrumenting" the endogenous treatment with the exogenous instrumental variable
 
 
 
@@ -697,7 +696,7 @@ $$y = \alpha + \beta \underbrace{D}_{\text{endogenous treatment}} + \gamma X + \
 
 The statistical model estimates the first equation (first stage), then predicts the values of $D$ and replaces the observed values of $D$ in the second equation (second stage) with the predicted values.
 
-This is equivalent to "controlling" for the endogenous part of the treatment $D$ and using only the exogenous part of the treatment to estimate the ATE.
+This is equivalent to controlling for the "endogenous part" of the treatment $D$ and using only the "exogenous part" of the treatment to estimate the ATE.
 
 
 
@@ -776,7 +775,7 @@ There are other assumptions which are more technical, we will not go through the
 
 ## Other research designs: DID and RDD
 
-For reference. We will go back to them if needed.
+Read this slide if you are interested. We will go through these other methods later in the course if needed.
 
 ```{r, fig.show = 'hold', out.width = '100%'}
 #| #label: fig-mpg
