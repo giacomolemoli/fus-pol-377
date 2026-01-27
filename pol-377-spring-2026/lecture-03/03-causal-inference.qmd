@@ -902,3 +902,8 @@ p +
 - We compare only units very close to the cutoff point to approximate a randomized experiment
 
 
+## Next
+
+- Review of this class
+- Discussion of IV assumptions
+- Discussion of a Nobel-prize winning article: Acemoglu, Johnson, and Robinson (2001)
