@@ -24,10 +24,9 @@ What do you think of when you think of "globalization"?
 >
 > [Wikipedia](https://en.wikipedia.org/wiki/Globalization)
 
+. . . 
 
-## What is globalization?
-
-Globalization is a complex phenomenon which involves the exchange of goods, services, information, technology, and people
+It is a complex phenomenon which involves the exchange of goods, services, information, technology, and people
 
 . . . 
 
@@ -40,6 +39,8 @@ In this module, we will focus on the [trade]{.alert} component of globalization
 ## Globalization and trade
 
 ![Growth of global trade](img/trade-owid.png)
+
+Source: [Our World in Data](https://ourworldindata.org/trade-and-globalization)
 
 ## Globalization and trade
 
@@ -80,6 +81,7 @@ For instance: distance, or changes in travel times as determined by changes in t
 - Work in pairs with your neighbor
 - Go to [https://ourworldindata.org/trade-and-globalization#trade-partnerships](https://ourworldindata.org/trade-and-globalization#trade-partnerships)
 - Look at the plots in this section and answer: How did the flows of trade between rich and poor countries change over time since the early 1800s?
+- What could explain these patterns?
 
 ## The rise of China in the world economy
 
@@ -102,17 +104,32 @@ Source: Autor, Dorn, Hanson (2013)
 
 
 # Institutions for Free Trade: GATT/WTO {.section}
-<!--
-## General Agreement on Tariffs and Trade
 
-- Features that should improve trade
-- Most Favored Nation clause etc
-- Social dilemmas that should be solved by GATT
 
-## World Trade Organization
+## GATT and WTO
 
-TBA
--->
+**General Agreement on Tariffs and Trade (1947)**
+
+- Multilateral treaty to elimitate barriers to trade among countries
+
+- Forum for discussion and legal framework for regulating trade
+
+- [Most Favored Nation]{.alert} principle: country A cannot be treated less favorably by country B than the "most favored nation" of country B 
+
+- Bilateral concessions apply to all other countries $\implies$ non-discrimination
+
+. . . 
+
+**World Trade Organization (1995)**
+
+- Extends GATT to services and intellectual property
+
+. . . 
+
+**Theoretically** speaking, can we expect these institutions to improve international trade? Why?
+
+[hint: recall the discussion in session 2. Is trade policy a social dilemma?]
+
 
 ## Did the GATT/WTO increase free trade?
 
@@ -124,16 +141,17 @@ Recap of the study:
 
 - What is the motivation for their study? Is there a gap or puzzle they want to address?
 - What is their argument regarding the effect of GATT/WTO?
-- What is their research design?
-- What are the units of analysis?
+- What is their research design (units of analysis, methods=?
+
 
 ## Did the GATT/WTO increase free trade?
 
 ![From Goldstein et al (2007)](img/goldstein-et-al-tab3.png)
 
+
 ## Did the GATT/WTO increase free trade?
 
-Do you think this study has broader implications for understanding the effects of institutions?
+Do you think this study has broader implications for studying the effects of institutions?
 
 # The Effects of Trade {.section}
 
@@ -161,13 +179,14 @@ Tabellini and Magistretti (2025) study this question
 
 
 - What is their research question?
-- What is the **logic** of their design? What is the "treatment"? What is the "instrument"?
+- What are the elements of their research design? What is the "treatment"? What is the "instrument"?
 - What are the **mechanisms** that they suggest for the result and the ones they say they rule out?
-- What are the identification assumptions? Do you find them plausible?
+- Intuitively, what are the identification assumptions? Are they plausible?
 
-## Class activity
+. . . 
 
-What can be the negative consequences of globalization (trade integration) on the economy? And on democracy?
+Can you think of negative consequences of the globalization (trade integration) on democracy?
+
 
 ## Next
 
@@ -175,18 +194,4 @@ What can be the negative consequences of globalization (trade integration) on th
 - The backlash against globalization today
 - The rise of the radical right in Western democracies
 
-<!--
-## Structure
 
-- brief history of the GATT/WTO
-- key features: MFN clause
-- features that should improve trade (for class)
-- Social dilemmas that should be solved by GATT (for class)
-- effects of GATT/WTO: discussion of Goldstein et al paper
-- challenges to estimating the effects of trade (for class)
-- implications for causal inference
-- effects of trade on democracy: discussion of Magistretti and Tabellini
-- theoretical channels for effects of trade on democracy/autocracy (for class)
-- is their estimation credible? what is the instrument, what are the id assumptions? (for class)
-- what are possible negative effects of free trade?
--->

@@ -7,7 +7,31 @@ date: "2026-02-10"
 
 ## Today
 
+- Understanding reactions to globalization: winners and losers
+- Backlash against globalization 
+- Backlash today: the rise of the radical right in Western democracies
 
+# Trade and Political Conflict {.section}
+## Trade and Political Conflict
+
+![From Rogowski (1987)](img/rogowski-prediction.png)
+
+
+## Globalization and the radical right
+
+![Policy positions of radical right parties](img/colantone-stanig-parties.png)
+
+## Globalization and the radical right
+
+![Trends in support for the radical right in Europe](img/colantone-stanig-trends.png)
+
+
+## Globalization and the radical right
+
+![Import shock and Brexit vote in 2016](img/colantone-stanig-brexit.png)
 
 ## Next
 
+- Are economic consequences the whole story?
+- Does globalization threaten cultural preferences and identity?
+- What is the relationship between economic and cultural concerns?
