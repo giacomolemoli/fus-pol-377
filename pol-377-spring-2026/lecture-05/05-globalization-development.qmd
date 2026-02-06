@@ -128,7 +128,7 @@ Source: Autor, Dorn, Hanson (2013)
 
 **Theoretically** speaking, can we expect these institutions to improve international trade? Why?
 
-[hint: recall the discussion in session 2. Is trade policy a social dilemma?]
+[Recall the discussion in session 2. Is trade policy a social dilemma?]{.remark}
 
 
 ## Did the GATT/WTO increase free trade?
@@ -137,11 +137,13 @@ Goldstein, Rivers, and Tomz (2007) study the effects of GATT/WTO on trade betwee
 
 . . . 
 
-Recap of the study:
+Summary of the study:
 
 - What is the motivation for their study? Is there a gap or puzzle they want to address?
 - What is their argument regarding the effect of GATT/WTO?
-- What is their research design (units of analysis, methods=?
+- What are *institutional standing* and *institutional embeddedness*?
+- 1-2 examples of differences between membership and institutional standing in the GATT/WTO?
+- In informal terms, what is their research design (units of analysis, methods)?
 
 
 ## Did the GATT/WTO increase free trade?
@@ -151,7 +153,9 @@ Recap of the study:
 
 ## Did the GATT/WTO increase free trade?
 
-Do you think this study has broader implications for studying the effects of institutions?
+Do you think this study has broader implications for studying the effects of institutions (in general)?
+
+Suppose we want to study the effects of a "club" like the WTO. What is their final suggestion?
 
 # The Effects of Trade {.section}
 
