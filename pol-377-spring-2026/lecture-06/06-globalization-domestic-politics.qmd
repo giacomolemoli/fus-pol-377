@@ -123,7 +123,7 @@ An influential framework to think of political conflict is that of [cleavages]{.
 
 . . . 
 
-::: {.callout-note title="Definition: political cleavages"}
+::: {.callout-note title="Definition: cleavage"}
 A cleavage is a social division between groups of citizens with different political interests
 :::
 
@@ -214,7 +214,7 @@ As globalization deepens and economic systems transform, "embedded liberal" comp
 
 - The entry of new players in the international system leads to structural changes in local economies, with highly localized costs $\rightarrow$ some local industries are permanently dismissed
 - International integration leads to delocalization in poorer countries and labor migration to richer countries
-- Capital mobility makes difficult to raise taxes on wealth and compensate losers
+- Capital mobility makes it difficult to raise taxes on wealth and compensate losers
 - "Inertia" of traditional parties in light of these problems reduces their perceived credibility and representativeness
 
 . . . 
@@ -247,9 +247,9 @@ $\implies$ old and new cleavages activated and "new" parties emerge
 
 What is the radical right? (see Colantone and Stanig 2019)
 
-- Critical of liberal democracy and institutional checks on the will of the majority
+- Critical of liberal view of democracy and of institutional checks on the will of the majority
 - Exclusionary nationalism and nativism
-- Populism: rejection of pluralism and elitism in favor of "people vs elites" conception of politics
+- Populism: rejection of pluralism and elitism in favor of "people vs elites" view of politics
 
 ## The rise of the radical right in the Western world
 
@@ -268,7 +268,7 @@ The success of the radical right is mostly a story of relatively old but previou
 
 . . . 
 
-Economic platform of the radical right: international isolation + economic conservatism at home
+Economic platform of the radical right: international isolation + economic conservatism at home (+ nationalist ideology)
 
 This can potentially appeal to a cross-class coalition (although the radical right attracts most support from the "mainstream" right)
 
@@ -325,8 +325,6 @@ They find that import penetration increased support for Brexit in the UK
 It is clear that international integration, and the "China shock" in particular, hit some sectors of the economy and caused radical right support
 
 Yet, some questions remain
-
-. . . 
 
 - Why do economic losers support the radical right (not pro-redistribution) rather than the left (pro-redistribution)?
     - Left-Right "mainstream" parties support globalization and may be perceived as non-trustworthy and non-representative
