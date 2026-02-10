@@ -150,7 +150,7 @@ Foundations of Rogowski's argument:
 
 **International Economics theory**
 
-- International trade leads to country specialization in the products of which the country has larger endowments $\rightarrow$ a land-abundant and capital-scarce country exports agricultural products (land-intensive) and imports cars (labor-intensive)
+- International trade leads to country specialization in the products of which the country has larger endowments $\rightarrow$ a land-abundant and capital-scarce country exports agricultural products (land-intensive) and imports cars (capital-intensive)
 
 - Trade liberalization increases the economic returns from the good of which a country is more abundant
 
