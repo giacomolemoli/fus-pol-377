@@ -5,12 +5,66 @@ date: "2026-03-24"
 ---
 
 
+# Introduction {.section}
+
+## Who are these people?
+
+::::{.columns}
+::: {.column width="30%"}
+![James Watt](img/watt-pic.jpg)
+:::
+::: {.column width="30%"}
+![Guglielmo Marconi](img/marconi-pic.jpg)
+:::
+::: {.column width="30%"}
+![Sam Altman](img/altman-pic.jpg)
+:::
+::::
+
+## Technology and politics
+
+In this module we will talk about the consequences of technology for the economy and politics
+
+- Technological change is the main engine of human economic development
+- It moves the economic frontier and redefines what can be done 
+- It alters economic relations between actors
+- It changes the costs and benefits from economic activity and consequently political demands
+
+## Class survey
+
+- In what application/domain do you use AI more often?
+- Where do you think it can be most useful?
+- Where do you think it can be dangerous?
+
+
+## The promise of emancipation
+
+**From Chalkboards to Chatbots : Evaluating the Impact of Generative AI on Learning Outcomes in Nigeria (English)**
+ [World Bank](https://documents.worldbank.org/en/publication/documents-reports/documentdetail/099548105192529324)
+
+![](img/gpt-wb.png)
+
+
+## Costs of adoption: economic disruptions
+
+![](img/ai-jobs.png)
+
+## Consequences of technological control
+
+![](img/openai-owners.png)
+
+
+## Political value of technology
+
+![](img/ai-white-house.png)
+
 ## Today
 
-- Technology and politics
 - Can the international diffusion of technology alter domestic political relations?
-- Today: can it **empower** some social groups?
+- Can it **empower** some social groups?
 
+
+# Historical evidence {.section}
 
 ## The Green Revolution and democratic politics in India
 
@@ -40,6 +94,8 @@ High-Yielding Variety (HYV) crops drastically improved agricultural productivity
 
 - Study the rise of agrarian parties as a consequence of increased rural political mobilization and coordination
 
+. . . 
+
 [This is essentially the same mechanism we have encountered in Rogowski's theory of trade cleavages]{.remark}
 
 
@@ -54,28 +110,10 @@ High-Yielding Variety (HYV) crops drastically improved agricultural productivity
 - **Instrument**: Share of land with naturally-occurring acquifer (interacted with post-1967)
 
 
-```{r}
-#| engine: tikz
-#| echo: false
-#| fig-align: center
-#| fig-ext: svg
-
-% Placeholder for TikZ picture: Causal DAG of the Research Design
-\begin{tikzpicture}
-  \node (Z) at (0,0) {Aquifer Coverage $\times$ Post-1967 (Instrument)};
-  \node (X) at (5,0) {HYV Crop Adoption (Treatment)};
-  \node (Y) at (10,0) {Political Turnover (Outcome)};
-  
-  \draw[->, thick] (Z) -- (X);
-  \draw[->, thick] (X) -- (Y);
-\end{tikzpicture}
-
-```
-
 
 ## Results: the demise of the Congress party
 
-![](img/dasgupta-scatter.png)
+![](img/dasgupta-scatter.png){fig-align="center"}
 
 ## Results: the demise of the Congress party
 
