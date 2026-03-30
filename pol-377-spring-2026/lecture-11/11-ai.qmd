@@ -1,0 +1,69 @@
+---
+title: "International Political Economy"
+subtitle: "Lecture 11: AI"
+date: "2026-03-31"
+---
+
+## Today's plan
+
+Today's class will have a different format than usual: it will be based on group discussions
+
+. . . 
+
+Why?
+
+- So far we have used past evidence to discuss (still) current topics
+- AI is a relatively new phenomenon: evidence is still mounting
+- AI progresses much faster than the ability of the scientific community to summarize in the traditional way (long analyses and peer-reviewed publications)
+    - This forces us to rethink our ways to summarize and disseminate knowledge (at least knowledge *about* AI)
+- A prospective rather than retrospective look seems more appropriate now for this topic
+- It is in our best interest to discuss the promises and risks of AI so that we are active participants and not passive adopters
+
+
+# AI and the economy {.section}
+
+## Class activity: education and labor market
+
+Form 3 groups: <u>students</u>, <u>university</u>, <u>employers</u>
+
+Each group provides:
+
+- **Goals**: what is the purpose of the actor/institution in the labor market (e.g., finding a job, learning, education, reputation, etc.)
+- **How**: what tools/strategies are traditionally used to achieve the goals (e.g., exams, interviews, evaluation, etc.)
+- For each strategy: where AI can be most useful, what are the potential threats (relative to reaching the initial goals)
+
+
+
+# AI and democracy {.section}
+
+## Class activity: democracy
+
+Form 3 groups: <u>citizens/voters</u>, <u>elected politicians</u>, <u>media</u>
+
+Each group provides:
+
+- **Goals**: what is the purpose of the actor/institution in a democratic system (e.g., representing, selecting , informing, etc.)
+- **How**: what tools/strategies are traditionally used to achieve the goals (e.g., elections)
+- For each strategy: where AI can be most useful, what are the potential threats (relative to reaching the initial goals)
+
+## AI and democratic institutions
+
+Kreps & Kriner (2023) and Hall (2025)
+
+* **Distorted representation:** generative AI can effortlessly mass-produce fake constituent emails and public regulatory comments
+* **Erosion of accountability and Social Trust:** the scale and micro-targeting of AI-generated misinformation risks overwhelming voters $\implies$ *political nihilism*: citizens distrust all information
+* **"Sycophancy":** AI models naturally adapt their answers to agree with users' prior beliefs $\implies$ AI become "invisible influencer": silently narrows citizens' perspectives and limits exposure to opposing facts 
+* **Perceived ideological slant:** left and right users perceive major AI models as having a left-leaning political slant (Westwood, Grimmer & Hall 2025) $\implies$ alienate segments of the electorate and worsen polarization?
+
+
+---
+
+## A democratic AI
+
+Some solutions offered:
+
+* **Explicit orientation:** instead of "quietly personalizing" answers, developers should offer an explicit menu of ideological lenses: users could opt into "political bias" and retain agency over information acquisition
+* **Promoting nuance and neutrality:** directing AI to adopt a neutral stance forces models to generate more ambivalent, balanced responses. Users from across the political spectrum rate these neutral responses as higher quality and more trustworthy (Westwood et al 2025)
+* **Guardrails:** platforms must encode ethical values into their models and deploy AI to detect AI
+* **Digital literacy:** encourage a "trust but verify" mindset. Public education should focus on helping voters identify the predictable, formulaic patterns typical of large language models (but how?)
+
