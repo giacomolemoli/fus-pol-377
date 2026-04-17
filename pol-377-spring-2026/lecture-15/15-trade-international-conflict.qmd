@@ -8,7 +8,7 @@ date: "2026-04-17"
 
 - The relationship between trade and international conflict
 - What is the role of institutions?
-- Consider calculations about the future as an important mechanism
+- What strategic considerations matter?
 
 ## Trade and international conflict
 
@@ -28,14 +28,14 @@ Does [trade]{.alert} between countries increase or decrease the likelihood that 
 
 This is a classic question in international relations
 
-## Classic approaches (from our first class)
+## Trade and war: classic approaches 
 
 ::::{.columns}
 ::: {.column width="50%"}
 
 ### Liberalism
 
-![](img/Adam_Smith_The_Muir_portrait.jpg){width="30%"}
+![](img/Adam_Smith_The_Muir_portrait.jpg){width="30%" fig-align="center"}
 
 ::: {.nonincremental}
 - Free trade is a ["positive-sum"]{.hover-note data-tooltip="This means that all parties can derive a net benefit from trade. In constrast, zero-sum means that total benefits are zero, so someone's gains must be someone else's losses."} game which makes all parties involved better off
@@ -50,7 +50,7 @@ $\implies$ Trade decreases conflict
 
 ### Realism
 
-![](img/Portrait_of_Niccol%C3%B2_Machiavelli_by_Santi_di_Tito.jpg){width="30%"}
+![](img/Portrait_of_Niccol%C3%B2_Machiavelli_by_Santi_di_Tito.jpg){width="30%" fig-align="center"}
 
 
 :::{.nonincremental}
@@ -83,11 +83,11 @@ $\implies$ Trade increases conflict
 Oneal and Russett (1999) examine empirically the soundness of the "Kantian peace" argument
 
 - **Hypotheses**: 
-  - (1) Democracies will use military force less frequently, especially against other democracies 
-  - (2) Economically important trade creates incentives to maintain peaceful relations 
-  - (3) Intergovernmental organizations (IGOs) constrain decision-makers and promote peace 
-- Incorporate the realist assumption that power matters and states pursue it, but adopt the perspective that institutions constrain single actors
-- This framework allows for both frameworks' predictions to hold in some cases
+  1. Democracies will use military force less frequently, especially against other democracies 
+  2. Economically important trade creates incentives to maintain peaceful relations 
+  3. Intergovernmental organizations (IGOs) constrain decision-makers and promote peace 
+- Incorporate the realist assumption that power matters and states pursue it, but with the perspective that institutions constrain single actors
+- This framework allows for both theories' predictions to hold in some cases
 
 ## Data and Methods
 
@@ -104,14 +104,15 @@ Oneal and Russett (1999) examine empirically the soundness of the "Kantian peace
 ![](img/oneal-tab2.png)
 :::
 ::: {.column width="60%"}
-- Democracy and economic interdependence associated with lower likelihood of militarized conflict. The association with shared IGO memberships is among "politically relevant" dyads (i.e., contiguous states or containing major powers)
+- Democracy and economic interdependence associated with lower likelihood of militarized conflict
+- The association with shared IGO memberships is among "politically relevant" dyads (i.e., contiguous states or containing major powers)
 - "Realist" factors such as power imbalance and geographic distanc are associated with disputes
 - Still, growing "Kantian" infuences probably account for more of the relative peace experienced in recent years
 - Plausibly by constraining power politics over the last century
 :::
 ::::
 
-# Concerns about the future {.section}
+# Dynamic strategic considerations {.section}
 
 ## A theory of trade expectations 
 
@@ -127,7 +128,7 @@ Proposal: bring in a theory of trade [expectations]{.alert} that bridges the two
 
 - The classic theories are *static*: they focus on countries' calculations in the [present]{.alert}
 - A *dynamic* approach includes expectations about [future]{.alert} trade 
-- Incorporates liberal insights ($\rightarrow$ benefits of trade incentivize peace) and realist concern ($\rightarrow$ vulnerability to trade break can push to war)
+- Incorporates liberal insights (benefits of trade $\implies$ peace) and realist concern (vulnerability to trade break $\implies$ war)
 
 
 ## Argument and methods
