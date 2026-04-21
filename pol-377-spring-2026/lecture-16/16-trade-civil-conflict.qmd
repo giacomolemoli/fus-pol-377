@@ -18,7 +18,7 @@ date: "2026-04-21"
 - You should propose a sound and realistic research project
     - That is, it should be reasonably be feasible with data and instruments within reach
     - E.g., "I will run a survey in country X" is fine, "I will develop a new vaccine" is not fine
-- Submission [deadline]{.alert} April 24 on Moodle as a single PDF document.
+- Submission [deadline]{.alert}: <u>April 24, 11.59</u> PM on Moodle as a <u>single PDF document</u>
 
 
 ## Format
@@ -36,7 +36,7 @@ date: "2026-04-21"
 - Research question (1 paragraph)
 - Motivation (1 paragraph)
 - Relevance of the research (1 paragraph)
-- Specifics of the research design (rest of the document) $\rightarrow$ follow the structure that we have used throughout the course
+- Specifics of the research design (rest of the document)
     - Population to be studied and why you chose to select it
     - What data are needed
     - Your proposed empirical strategy: assumptions needed (if any), challenges to causal inference (if any), strategies to address them (if any)
@@ -44,7 +44,7 @@ date: "2026-04-21"
 
 ## Last week presentation session
 
-In the last week of class, we will have two presentation sessions
+In the last week of classes, we will have two presentation sessions
 
 - Everyone will make a short presentation of the research design (max 10 minutes, with slides)
 - We follow alphabetical order:
@@ -60,7 +60,7 @@ In the last week of class, we will have two presentation sessions
 
 In our last class we have talked about international conflicts and wars
 
-However, most armed conflicts happen within country borders
+However, most armed conflicts in the world happen within country borders
 
 ![Source: https://www.brookings.edu/articles/democracy-and-civil-war/](img/civil-war.png){fig-align="center"}
 
@@ -78,7 +78,7 @@ However, most armed conflicts happen within country borders
 
 ## Civil conflict
 
-A large number of countries has been affected by civil conflicts or wars in the post-WWII period
+A large minority of countries has been affected by civil conflicts or wars in the post-WWII period
 
 ![Source: Blattman and Miguel (2010)](img/blattman-miguel-fig2.png)
 
@@ -141,7 +141,7 @@ Civil conflict started in 1964, after years of inter-partisan political violence
 
 - **Main actors**: Left-wing [guerrilla]{.alert} groups (esp. FARC and ELN); [paramilitary]{.alert} counter-insurgents, later forming a unified coalition (AUC); armed forces of the Colombian state
 - Groups $\rightarrow$ political and economic motivations, recruit in parallel to labor market, and fund themselves through predation and illegal activities
-- Government-FARC ceasefire deal (2016) and disarming, violence between the state and former FARC factions remain
+- Government-FARC ceasefire deal (2016) and disarming, violence between the state and former FARC factions remains
 
 
 ## International shocks and conflict dynamics
