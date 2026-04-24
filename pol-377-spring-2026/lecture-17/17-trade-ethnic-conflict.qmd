@@ -289,6 +289,8 @@ $\implies$ This mechanism counteracts the risk of violence due to "rapacity" aga
 
 Presentations:
 
+::: {.nonincremental}
 - **Tuesday, April 28**: Judy, Alexander, Elizabeth, Lya, Logan, Jackson, Natalie
 
 - **Friday, May 1st**: Emmett, Alex, Ella, Nathan, Pratik, Rebeca, Saina
+:::
