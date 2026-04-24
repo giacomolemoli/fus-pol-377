@@ -1,6 +1,6 @@
 ---
 title: "International Political Economy"
-subtitle: "Lecture 15: Trade and Civil Conflict"
+subtitle: "Lecture 16: Trade and Civil Conflict"
 date: "2026-04-21"
 ---
 
